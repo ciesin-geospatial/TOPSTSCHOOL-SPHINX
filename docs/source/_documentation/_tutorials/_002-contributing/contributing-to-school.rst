@@ -26,7 +26,7 @@ Contributing to SCHOOL
     :timestamp: November 16, 2024
 
     - :name: TOPSTSCHOOL Development Team
-    - :email: TOPSTSCHOOL@gmail.com
+    - :email: TOPSTSCHOOL@ciesin.columbia.edu
     - :headshot: https://avatars.githubusercontent.com/u/16084170?s=200&v=4
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
@@ -54,10 +54,9 @@ Why Contribute?
 Before we dive into the details, let's take a moment to reflect on why
 contributing to this project is so meaningful.
 
-The |website-tops| Training initiative is more than just a project |html-dash|
-it's a movement. It advocates for open science, a transformative approach to
+The SCHOOL project advocates for open science, a transformative approach to
 research that emphasizes transparency, inclusivity, and collaboration. By
-contributing you're helping to:
+contributing, you're helping to:
 
 - **Empower researchers, scientists and educators** by providing clear,
   accessible resources.
