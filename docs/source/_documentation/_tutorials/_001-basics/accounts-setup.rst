@@ -27,7 +27,7 @@ Accounts Setup
     :timestamp: November 06, 2024
 
     - :name: TOPSTSCHOOL Development Team
-    - :email: TOPSTSCHOOL@gmail.com
+    - :email: TOPSTSCHOOL@ciesin.columbia.edu
     - :headshot: https://avatars.githubusercontent.com/u/16084170?s=200&v=4
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
@@ -78,11 +78,8 @@ provides the tools you need to manage projects, contribute to
 
 At its core, GitHub is a hosting service for version control using Git. This
 means it helps you track changes in your work, collaborate with others
-seamlessly, and manage multiple versions of a project. Many of NASA's open
-science projects, including the :term:`TOPS` :term:`SCHOOL` initiative, use
-GitHub to share their work and invite contributions from the global community.
-So, setting up a GitHub account is the first step toward being part of this
-exciting, inclusive movement.
+seamlessly, and manage multiple versions of a project. Setting up a GitHub account
+is the first step toward being part of this exciting, inclusive movement.
 
 Let's walk through how to create your personal GitHub account and get started
 with open science!

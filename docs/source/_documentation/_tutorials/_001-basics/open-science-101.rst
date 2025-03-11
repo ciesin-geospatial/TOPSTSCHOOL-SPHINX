@@ -26,7 +26,7 @@ Open Science 101
     :timestamp: November 02, 2024
 
     - :name: TOPSTSCHOOL Development Team
-    - :email: TOPSTSCHOOL@gmail.com
+    - :email: TOPSTSCHOOL@gciesin.columbia.edu
     - :headshot: https://avatars.githubusercontent.com/u/16084170?s=200&v=4
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
@@ -44,10 +44,9 @@ researchers can accelerate discoveries, increase public engagement, and ensure
 that science serves humanity more effectively.
 
 The :term:`SCHOOL`, **Science Core Heuristics for Open Science Outcomes in
-Learning** program is an essential part of NASA's TOPS initiative. It provides
-a structured, immersive curriculum designed to introduce students,
-researchers, and science enthusiasts to the core principles of Open Science.
-Whether you're just starting out or already well-versed in scientific
+Learning** project provides a structured, immersive curriculum designed
+to introduce students, researchers, and science enthusiasts to the core principles 
+of Open Science. Whether you're just starting out or already well-versed in scientific
 research, our mission is to help you harness the power of Open Science to
 drive meaningful change.
 

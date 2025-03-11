@@ -22,7 +22,7 @@ About Us
     :location: Palisades, NY
 
     - :name: TOPSTSCHOOL Development Team
-    - :email: TOPSTSCHOOL@gmail.com
+    - :email: TOPSTSCHOOL@ciesin.columbia.edu
     - :headshot: https://avatars.githubusercontent.com/u/16084170?s=200&v=4
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
@@ -40,13 +40,13 @@ Project Overview
 Project Overview
 SCHOOL’s objective is to develop curriculum for ScienceCore that incorporates
 NASA Earth Science Applications use cases and data into the data science life
-cycle as part of `NASA’s Open Source Science Initiative (OSSI) <https://science.nasa.gov/researchers/open-science/>`_. The project
-consists of seven 2.5 hour learning modules designed to fit both online
+cycle as part of `NASA’s Open Source Science Initiative (OSSI) <https://science.nasa.gov/researchers/open-science/>`_. 
+The project consists of several 2.5 hour learning modules designed to fit both online
 (self-led) and in person instruction. Modules focus on demonstrating the data
 science life cycle with varying themes: **Water, Health and Air Quality,
 Environmental Justice, Disasters, Wildfires, Agriculture, and Climate.**
 
-School Pedagogy
+SCHOOL Pedagogy
 *******************************************************************************
 
 Inclusive Teaching
@@ -92,9 +92,8 @@ Evaluations
 TOPSTSCHOOL Module Structure
 ===============================================================================
 
-Each 2.5 hour thematic module, broken down into five 30-minute lessons, will
-demonstrate the full data science life cycle and connect those processes with
-open science principles.
+Each thematic module will demonstrate the full data science life cycle and connect 
+the life cycle with open science principles.
 
 .. list-table::
     :widths: 5 5 5
