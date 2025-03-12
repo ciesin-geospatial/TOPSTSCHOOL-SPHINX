@@ -45,7 +45,7 @@ that science serves humanity more effectively.
 
 The :term:`SCHOOL`, **Science Core Heuristics for Open Science Outcomes in
 Learning** project provides a structured, immersive curriculum designed
-to introduce students, researchers, and science enthusiasts to the core principles 
+to introduce students, researchers, and science enthusiasts to the core principles
 of Open Science. Whether you're just starting out or already well-versed in scientific
 research, our mission is to help you harness the power of Open Science to
 drive meaningful change.
