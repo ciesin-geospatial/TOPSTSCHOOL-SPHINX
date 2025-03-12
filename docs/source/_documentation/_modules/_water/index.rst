@@ -27,7 +27,7 @@ Water
 
 Welcome to the first module of the SCHOOL curriculum!
 
-The Science Core Heuristics for Open Science Outcomes in Learning (SCHOOL) is 
+The Science Core Heuristics for Open Science Outcomes in Learning (SCHOOL) is
 designed to teach the data science lifecycle using data from the NASA Earth 
 Sciences division. You can learn more about the SCHOOL Project and other modules
 on the `SCHOOL Project home page <https://ciesin-geospatial.github.io/TOPSTSCHOOL/>`_.
