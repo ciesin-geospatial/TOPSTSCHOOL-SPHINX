@@ -32,7 +32,7 @@ designed to teach the data science lifecycle using data from the NASA Earth
 Sciences division. You can learn more about the SCHOOL Project and other modules
 on the `SCHOOL Project home page <https://ciesin-geospatial.github.io/TOPSTSCHOOL/>`_.
 
-This TOPS SCHOOL module on the theme of "Air Quality and Health" provides a
+This SCHOOL module on the theme of "Air Quality and Health" provides a
 foundational understanding of the complex interplay between air quality,
 public health, and environmental justice. We will explore how we can use
 spatial data for the study of air pollution, the sources and types of

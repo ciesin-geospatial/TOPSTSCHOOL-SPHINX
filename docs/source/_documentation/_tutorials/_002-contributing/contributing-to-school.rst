@@ -31,7 +31,7 @@ Contributing to SCHOOL
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
 
-We're super happy that you're here and eager to contribute to our mission of
+We're happy that you're here and eager to contribute to our mission of
 promoting :term:`open science` and accessibility in research. Every
 contribution you make, big or small, is a step toward empowering a global
 community of learners, researchers, and educators. This guide will help you

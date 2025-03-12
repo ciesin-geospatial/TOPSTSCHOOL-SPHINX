@@ -20,19 +20,17 @@ Water
     :location: Palisades, NY
 
     - :name: TOPSTSCHOOL Development Team
-    - :email: TOPSTSCHOOL@gmail.com
+    - :email: TOPSTSCHOOL@ciesin.columbia.edu
     - :headshot: https://avatars.githubusercontent.com/u/16084170?s=200&v=4
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
 
 Welcome to the first module of the SCHOOL curriculum!
 
-The Science Core Heuristics for Open Science Outcomes in Learning (SCHOOL) is
-part of the |website-tops| Training (TOPST) initiative, designed to teach
-the data science lifecycle using data from the NASA Earth Sciences division
-and to foster an inclusive culture of open science. You can learn more about
-the SCHOOL Project and other modules on the `SCHOOL Project home page.
-<https://ciesin-geospatial.github.io/TOPSTSCHOOL/>`_
+The Science Core Heuristics for Open Science Outcomes in Learning (SCHOOL) is 
+designed to teach the data science lifecycle using data from the NASA Earth 
+Sciences division. You can learn more about the SCHOOL Project and other modules
+on the `SCHOOL Project home page <https://ciesin-geospatial.github.io/TOPSTSCHOOL/>`_.
 
 The first SCHOOL module on the theme of “Water and related-resources” explores
 how the water cycle impacts humans and how they are affected by the changes.
