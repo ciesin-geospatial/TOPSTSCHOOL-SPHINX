@@ -28,8 +28,7 @@ About Us
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
 
 
-**Science Core Heuristics for Open Science Outcomes in Learning (SCHOOL)**,
-part of the NASA `Transform to Open Science (TOPS) <https://zenodo.org/records/8087116>`_ Training (TOPST) initiative.
+**Science Core Heuristics for Open Science Outcomes in Learning (SCHOOL)**
 
 SCHOOL
 ===============================================================================
