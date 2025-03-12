@@ -39,8 +39,7 @@ Project Overview
 Project Overview
 SCHOOL’s objective is to develop curriculum for ScienceCore that incorporates
 NASA Earth Science Applications use cases and data into the data science life
-cycle as part of `NASA’s Open Source Science Initiative (OSSI)
-<https://science.nasa.gov/researchers/open-science/>`_.
+cycle as part of `NASA’s Open Source Science Initiative (OSSI)<https://science.nasa.gov/researchers/open-science/>`_.
 The project consists of several 2.5 hour learning modules designed to fit both online
 (self-led) and in person instruction. Modules focus on demonstrating the data
 science life cycle with varying themes: **Water, Health and Air Quality,
@@ -89,7 +88,7 @@ Evaluations
 *   Clearly defined learning objectives allow instructors to assess metrics of
     student performance, and to provide feedback early and often.
 
-TOPSTSCHOOL Module Structure
+SCHOOL Module Structure
 ===============================================================================
 
 Each thematic module will demonstrate the full data science life cycle and
