@@ -75,25 +75,6 @@ Module 3: Disaster datasets and use cases cover:
     GOES-18
     Data <https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m302-wildfire-assessment.html>`__
 
-- **Community Generated: Multi-Hazards**
-  This lesson showcases community-generated lessons that demonstrate
-  different aspects of the data science life cycle.
-
-  - `Lesson 4a: Mapping Wildfire Burned Areas Using VIIRS/AVIRIS-3 Data
-    (Python) <https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304a-viirs-wildfires.html>`__
-
-  - `Lesson 4b: The Major Effects of Climate Change Towards the Arctic
-    Ecosystem
-    (Python) <https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304b-arctic-climate.html>`__
-
-  - `Lesson 4c: Data Analysis of California Wildfires
-    (Python) <https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304c-california-wildfires.html>`__
-
-  - `Lesson 4d: Opening Snow Storm Data
-    (Python) <https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304d-snow-storms.html>`__
-
-- **More Lessons coming soon…**
-
 .. container::
 
    `Start
