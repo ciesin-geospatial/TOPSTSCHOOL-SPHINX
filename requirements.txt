@@ -1,5 +1,5 @@
 git+https://github.com/xames3/coeus-sphinx-theme.git@main
-sphinx
+Sphinx==8.1.3
 sphinx-copybutton
 sphinx-intl
 sphinx-lint
