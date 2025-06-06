@@ -103,6 +103,38 @@ button[type="button"] {
 }
 
 
+::-webkit-scrollbar {
+  width: 4px;     
+  height: 4px;    
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #aaa;
+  border-radius: 4px;
+}
+
+
+/* .previous-next {
+    margin-left: auto;
+    display: flex;
+    position: absolute;
+    overflow-y: hidden;
+    top: 99%;
+    width: 90%;
+    height: 50px;
+    gap: 1rem;
+    float: right;
+}
+ */
+
+ /* .footer-element {
+    align-items: center !important;
+    justify-content: center !important;
+    max-width: max-content !important;
+    margin: 3rem 4rem !important;
+} */
+
+
 
 
 
