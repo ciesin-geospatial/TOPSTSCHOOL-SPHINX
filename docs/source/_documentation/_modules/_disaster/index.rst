@@ -10,7 +10,7 @@ Disaster
 ===============================================================================
 
 .. title-hero::
-    :icon: fa-solid fa-fire
+    :icon: fa-solid fa-house-chimney-crack
     :summary:
         ...
 
