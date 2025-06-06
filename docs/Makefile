@@ -1,3 +1,3 @@
 .PHONY: html
 html:
-	sphinx-build -b html source/ build/
+	sphinx-build --builder html source/ build/
