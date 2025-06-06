@@ -33,7 +33,7 @@ The focus here is on diverse, independently developed lessons that tackle differ
 
 Each lesson below walks you through specific data science workflows with openly available NASA datasets, providing a hands-on learning experience for those ready to explore disasters through the lens of open science.
 
-Community-Contributed Lessons: 
+Community-Contributed Lessons:
 
 - `Lesson 4a: Mapping Wildfire Burned Areas Using VIIRS/AVIRIS-3 Data (Python) <https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304a-viirs-wildfires.html>`__
 
@@ -45,4 +45,3 @@ Community-Contributed Lessons:
 
 
 We thank the SCHOOL community and contributors for helping expand the reach and relevance of this module. Your insights shape how disasters are studied and understood through open science.
-
