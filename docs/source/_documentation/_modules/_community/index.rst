@@ -44,5 +44,3 @@ Community-Contributed Lessons:
 - `Lesson 4d: Opening Snow Storm Data (Python) <https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m304d-snow-storms.html>`__
 
 
-
-We thank the SCHOOL community and contributors for helping expand the reach and relevance of this module. Your insights shape how disasters are studied and understood through open science.
