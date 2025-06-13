@@ -204,6 +204,7 @@ thematic content regularly and in manageable stages.
     _documentation/_modules/_air-quality/index
     _documentation/_modules/_disaster/index
     _documentation/_modules/_climate/index
+    _documentation/_modules/_community/index
 
 .. toctree::
     :caption: Tutorials & Guides
