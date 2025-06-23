@@ -25,7 +25,14 @@
 .. |language-python| replace:: :raw-html:`<i class="fa-brands fa-python language-prefix"></i>`
 .. |language-r| replace:: :raw-html:`<i class="fa-brands fa-r-project language-prefix"></i>`
 
-.. |website-tops| replace:: :raw-html:`<a href="https://nasa.github.io/Transform-to-Open-Science/" data-original-href="https://nasa.github.io/Transform-to-Open-Science/" target="_blank">NASA's Transform to Open Science (TOPS)</a>`
+.. |m1| replace:: :raw-html:`<a class="btn-link" href="_documentation/_modules/_water/index.html">Module 1: Water</a>`
+.. |m2| replace:: :raw-html:`<a class="btn-link" href="_documentation/_modules/_air-quality/index.html">Module 2: Air Quality</a>`
+.. |m3| replace:: :raw-html:`<a class="btn-link" href="_documentation/_modules/_disaster/index.html">Module 3: Disasters</a>`
+.. |m4| replace:: :raw-html:`<a class="btn-link" href="_documentation/_modules/_climate/index.html">Module 4: Climate & Agriculture</a>`
+.. |m5| replace:: :raw-html:`<a class="btn-link" href="_documentation/_modules/_community/index.html">Module 5: Community Generated</a>`
+
+
+.. |website-tops| replace:: :raw-html:`<a href="https://science.nasa.gov/open-science/os101/" data-original-href="https://science.nasa.gov/open-science/os101/" target="_blank">NASA's Transform to Open Science (TOPS)</a>`
 
 .. _github: https://github.com/
 .. _orcid: https://orcid.org/register

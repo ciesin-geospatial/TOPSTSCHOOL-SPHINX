@@ -136,6 +136,20 @@ button[type="button"] {
 
 
 
+a.btn-link {
+    display: inline-block;
+    background-color: #007BFF;
+    color: white !important;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+a.btn-link:hover {
+    background-color: #0056b3;
+}
 
 
 
