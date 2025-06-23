@@ -21,10 +21,9 @@ Feedback
     :location: Palisades, NY
 
     - :name: TOPSTSCHOOL Development Team
-    - :email: TOPSTSCHOOL@gmail.com
+    - :email: TOPSTSCHOOL@ciesin.columbia.edu
     - :headshot: https://avatars.githubusercontent.com/u/16084170?s=200&v=4
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
 
-Don't have a `GitHub`_ account? Contact us `here <mailto:TOPSTSCHOOL@gmail.
-com>`_!
+Don't have a `GitHub`_ account? Contact us `here <mailto:TOPSTSCHOOL@ciesin.columbia.edu>`_!

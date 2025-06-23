@@ -24,7 +24,7 @@ Required Tools
     :location: Palisades, NY
 
     - :name: TOPSTSCHOOL Development Team
-    - :email: TOPSTSCHOOL@gmail.com
+    - :email: TOPSTSCHOOL@ciesin.columbia.edu
     - :headshot: https://avatars.githubusercontent.com/u/16084170?s=200&v=4
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
@@ -84,7 +84,7 @@ Git
 Git is a powerful, distributed :term:`version control system` that enables you
 to track changes in your code and data over time. Git is not just a tool but
 an essential framework that supports open science through efficient, organized
-collaboration on data, code, and research. Like mentioned earlier, Git is a
+collaboration on data, code, and research. As previously mentioned, Git is a
 distributed version control system, meaning it allows multiple contributors to
 work on a project simultaneously and independently, while maintaining an
 organized record of changes.
