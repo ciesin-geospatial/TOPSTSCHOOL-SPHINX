@@ -191,7 +191,7 @@ Zenodo `here <https://zenodo.org/communities/topstschool/records?q=&l=list&p=1
 Why Join SCHOOL?
 -------------------------------------------------------------------------------
 
-.. image:: ./_assets/team/team.png
+.. image:: ../_assets/team/team.png
     :alt: SCHOOL Team
 
 The SCHOOL Project isn't just about education; it's about building a community
@@ -210,7 +210,7 @@ If so, SCHOOL is the perfect place for you to make an impact. Together, we can
 create a world where knowledge knows no boundaries, and science is accessible
 to all.
 
-:doc:`Learn more <_navbar/getting-involved>` |chevron-right|
+|getting-involved-link| |chevron-right|
 
 -------------------------------------------------------------------------------
 Project Timeline

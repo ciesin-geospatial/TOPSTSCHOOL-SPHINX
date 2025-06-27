@@ -31,6 +31,9 @@
 .. |m4| replace:: :raw-html:`<a class="btn-link" href="_documentation/_modules/_climate/index.html">Module 4: Climate & Agriculture</a>`
 .. |m5| replace:: :raw-html:`<a class="btn-link" href="_documentation/_modules/_community/index.html">Module 5: Community Generated</a>`
 
+.. |getting-involved-link| replace:: `Learn more <_navbar/getting-involved.html>`__
+
+
 
 .. |website-tops| replace:: :raw-html:`<a href="https://science.nasa.gov/open-science/os101/" data-original-href="https://science.nasa.gov/open-science/os101/" target="_blank">NASA's Transform to Open Science (TOPS)</a>`
 
