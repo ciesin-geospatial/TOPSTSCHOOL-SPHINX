@@ -40,6 +40,8 @@ make science open, inclusive, and accessible to all. Our mission is to inspire s
 Earth Science Applications and embrace the power of Open Science in solving
 some of the world's most pressing challenges. 
 
+Hello Test
+
 The SCHOOL project was started with funding from a NASA ROSES Grant under the Transform to Open Science - Training mission. 
 The SCHOOL curriculum consists of open, interactive, and interdisciplinary learning modules covering thematic areas including 
 water, health and air quality, natural disasters, climate, agriculture, and wildfires, while integrating themes of population 
