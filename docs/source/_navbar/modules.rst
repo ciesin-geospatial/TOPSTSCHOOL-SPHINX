@@ -33,7 +33,7 @@ SCHOOL Modules
 Module 1: Water
 *******************************************************************************
  
-The Water module explores data on historial water return periods, satellite data of near-real time flood zones, and local lead in water tests.
+The Water module explores data on historial water return periods, satellite data of near-real time flood zones, and local lead in water tests. This module covers the water cycle and how it impacts humans, and how humans are affected by changes in the water cycle. The module consists of three use cases that cover examples of water use, safety, and anomalies such as droughts and floods. Each use case uses a unique dataset to walk users through lessons in accessing and analyzing data, and further adapting the code to perform their analyses including data cleaning, processing to subset to an area of interest, and creating visualizations to share what they have learned with their communities.
 
 |m1|
 
@@ -77,11 +77,3 @@ Module 5: Community Generated
 The Community Generated module is a collection of short-form learning modules submitted by the TOPS SCHOOL community. Their topics range with all thematic areas covered in the SCHOOL project and demonstrate parts of the data science life cycle. 
 
 |m5|
-
-
-
-
-
-
-
-
