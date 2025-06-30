@@ -112,4 +112,3 @@ ogp_enable_meta_description: bool = True
 def setup(app):
     app.add_css_file("styles.css")
     
-    
