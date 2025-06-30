@@ -89,7 +89,8 @@ html_coeus_theme_options: dict[str, t.Any] = {
         "About": "_navbar/about-us",
         "Get Involved": "_navbar/getting-involved",
         "School Yearbook": "_navbar/meet-the-team",
-        "Modules" : "_navbar/modules"
+        "Modules" : "_navbar/modules",
+        
     },
 }
 
@@ -109,4 +110,5 @@ ogp_enable_meta_description: bool = True
 
 
 def setup(app):
-    app.add_css_file("styles.css") 
+    app.add_css_file("styles.css")
+    
