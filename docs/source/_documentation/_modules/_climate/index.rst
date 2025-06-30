@@ -49,9 +49,11 @@ Module 4: Climate and Agriculture datasets and use cases cover:
     -   [Lesson 4: NASA ACRES Climate Resilience Network](https://ciesin-geospatial.github.io/TOPSTSCHOOL-climate-agriculture/m404-nasa-acres-climate-resilience-network.html)
 
 
-::: {style="text-align: right;"}
-[Start Lesson 1](https://ciesin-geospatial.github.io/TOPSTSCHOOL-climate-agriculture/m401-human-exposure-heat.html){.btn .btn-primary .btn role="button"}
-:::
+.. raw:: html
+
+    <div style="text-align: right;">
+        <a href="https://ciesin-geospatial.github.io/TOPSTSCHOOL-climate-agriculture/m401-human-exposure-heat.html" class="btn btn-primary btn" role="button">Start Lesson 1</a>
+    </div>
 
 This course was made possible thanks to the work of our NASA Transform to Open Science (TOPS) team, our SCHOOL Open Science team, open science Subject Matter Experts (SMEs), and the SCHOOL Development team!
 

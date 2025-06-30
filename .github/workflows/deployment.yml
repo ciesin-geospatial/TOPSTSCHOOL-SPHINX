@@ -11,10 +11,6 @@ run-name: Started ${{ github.workflow }} after ${{ github.actor }}'s actions
 on:
   workflow_dispatch:
   pull_request_target:
-    paths:
-      - '.github/**'
-      - 'docs/**'
-      - 'requirements*'
 
 permissions:
   contents: write
@@ -51,7 +47,6 @@ jobs:
   build:
     name: build
     needs: lint
-    if: github.event_name == 'push' || github.event_name == 'pull_request_target'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

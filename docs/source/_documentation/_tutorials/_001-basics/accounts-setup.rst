@@ -19,8 +19,7 @@ Accounts Setup
         these easy, step-by-step guides to create and configure the accounts
         required for contributing towards open science.
 
-.. tags:: getting-started, open-science-101, github, orcid, nasa-earthdata,
-    zenodo
+.. tags:: getting-started, open-science-101, github, orcid, nasa-earthdata, zenodo
 
 .. contributors::
     :location: Palisades, NY
