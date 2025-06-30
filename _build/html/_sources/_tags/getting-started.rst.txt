@@ -1,0 +1,22 @@
+.. _sphx_tag_getting-started:
+
+===============================================================================
+Tagged Pages
+===============================================================================
+
+.. title-hero::
+    :icon: fa-solid fa-tags
+    :summary: All pages with selected tags.
+
+.. toctree::
+    :maxdepth: 1
+    :caption: GETTING-STARTED
+
+    ../_documentation/_tutorials/_001-basics/accounts-setup.rst
+    ../_documentation/_tutorials/_001-basics/open-science-101.rst
+    ../_documentation/_tutorials/_001-basics/required-tools.rst
+    ../_documentation/_tutorials/_002-contributing/contributing-to-school.rst
+    ../_documentation/_tutorials/_002-contributing/initial-commit.rst
+    ../_documentation/_tutorials/_002-contributing/making-first-change.rst
+    ../_documentation/_tutorials/_002-contributing/repository-overview.rst
+    ../_documentation/_tutorials/_002-contributing/using-sphinx.rst

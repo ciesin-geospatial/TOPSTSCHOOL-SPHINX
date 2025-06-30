@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html data-content_root="../../../" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Open Science 101" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/_documentation/_tutorials/_001-basics/open-science-101.html" property="og:url"/>
+<meta content="TOPSTSCHOOL" property="og:site_name"/>
+<meta content="An introduction to the principles, practices, and importance
+of open science for collaboration and accessibility." property="og:description"/>
+<meta content="getting-started open-science-101 Open Science is a global movement that aims to make scientific research more accessible, transparent, and collaborative. At NASA, we’re embracing this transformatio..." name="description"/>
+<title>Open Science 101</title>
+<meta content="Open Science 101" property="og:title"/>
+<meta content="Open Science 101" name="twitter:title"/>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/8bcdaaff4d.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link href="../../../_static/pygments.css?v=8e8a900e" rel="stylesheet" type="text/css">
+<link href="../../../_static/coeus.css?v=7e4c1ec4" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/styles.css?v=28f40da2" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/coeus.css?v=7e4c1ec4" rel="stylesheet" type="text/css"/>
+<link href="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/_documentation/_tutorials/_001-basics/open-science-101.html" rel="canonical"/>
+<link href="../../../_static/favicon.png" rel="icon"/>
+<link href="../../../search.html" rel="search" title="Search"/>
+</link></head>
+<body :class="{ 'overflow-hidden': showSidebar }" class="antialiased" x-data="{ showSidebar: false }">
+<div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="x-cloak" x-show="showSidebar"></div>
+<div id="page">
+<header class="header-pill glass-bevel">
+<a class="header-logo" href="../../../index.html">
+<img alt="Logo" height="36" src="../../../_static/logo.png" style="margin-right: 0.5rem;" width="36"/><span class="header-title">TOPSTSCHOOL</span>
+</a><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
+<svg aria-hidden="true" fill="currentColor" height="36" viewbox="0 96 960 960" width="36" xmlns="http://www.w3.org/2000/svg">
+<path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
+</svg>
+<span class="sr-only">Toggle navigation menu</span>
+</button>
+<div class="header-content"><nav>
+<a href="../../../_navbar/about-us.html">About</a>
+<a href="../../../_navbar/getting-involved.html">Get Involved</a>
+<a href="../../../_navbar/meet-the-team.html">School Yearbook</a>
+</nav>
+<div class="header-search">
+<div x-data="{ isOpen: false }">
+<button @click="isOpen = !isOpen; $nextTick(() =&gt; $refs.search.focus())" aria-label="Toggle search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<form @click.outside="isOpen = false" action="../../../search.html" class="searchbox" id="searchbox" method="get" x-show="isOpen" x-transition="">
+<input aria-label="Search the docs" class="glass-bevel" id="search-input" name="q" placeholder="Search documentation" type="search" x-ref="search"/>
+</form>
+</div>
+</div></div>
+</header>
+<div class="universal-wrapper">
+<div "="" class="hero-wrapper" style="background-image:linear-gradient(to left, #fdde5c,
+                #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3);">
+<div class="hero-content"></div>
+</div>
+<div class="outer-content-wrapper">
+<aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" id="left-sidebar">
+<div class="sidebar-wrapper">
+<nav class="flex md:hidden flex-col font-medium mt-4">
+<a href="../../../_navbar/about-us.html">About</a>
+<a href="../../../_navbar/getting-involved.html">Get Involved</a>
+<a href="../../../_navbar/meet-the-team.html">School Yearbook</a>
+</nav>
+
+<p class="caption" role="heading"><span class="caption-text">**Modules**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_water/index.html">Water</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_air-quality/index.html">Air Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_disaster/index.html">Disaster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_climate/index.html">Climate</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Tutorials &amp; Guides**</span></p>
+<ul class="current">
+<li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') }"><a :class="{ 'expanded': expanded }" @click="expanded = !expanded" class="current reference internal expandable" href="#">Open Science 101<button @click.prevent.stop="expanded = !expanded" type="button"><i class="fa-solid fa-circle-plus"></i></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="accounts-setup.html">Accounts Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="required-tools.html">Required Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') }"><a :class="{ 'expanded': expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../_002-contributing/contributing-to-school.html">Contributing to SCHOOL<button @click.prevent.stop="expanded = !expanded" type="button"><i class="fa-solid fa-circle-plus"></i></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/repository-overview.html">Repository Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/using-sphinx.html">Using Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/making-first-change.html">Making First Change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/initial-commit.html">Initial Commit</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Resources**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../_resources/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../_resources/feedback.html">Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../_navbar/getting-involved.html">How to Get Involved</a></li>
+</ul>
+</div>
+</aside>
+<main class="inner-content-wrapper">
+<span class="fa-regular fa-arrows-spin hero-icon"></span>
+<div class="inner-content-wrapper">
+<nav aria-label="breadcrumbs" class="breadcrumbs space-x-1">
+<a class="breadcrumbs-passive" href="../../../index.html">
+<span class="hidden md:inline">TOPSTSCHOOL</span>
+<svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
+</svg>
+</a><span aria-current="page" class="breadcrumbs-active" style="margin-left: 0rem">Open Science 101</span>
+</nav>
+<div class="page-content" id="content" role="main"><section id="open-science-101">
+<span id="id1"></span><h1>Open Science 101<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#open-science-101"></a></h1>
+
+<div class="hero-summary">
+<p>Discover the transformative world of Open Science and learn how
+SCHOOL program is empowering researchers and learners to contribute to
+global challenges through open science.</p>
+</div>
+<p class="tags"><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/getting-started.html"><span class="doc">getting-started</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/open-science-101.html"><span class="doc">open-science-101</span></a></p>
+
+<div class="contributors-wrapper">
+<p class="contributors-timestamp">November 02, 2024</p>
+<div class="contributors-publisher">
+<span>Published by <a aria-label="Ask TOPSTSCHOOL Development Team via email" class="contributor-name" data-index="0" href="mailto:TOPSTSCHOOL@gmail.com?subject=[TOPSTSCHOOL] Open Science 101">TOPSTSCHOOL Development Team</a></span>
+<div class="project-socials">
+<a aria-label="Share this article via Youtube (opens a new tab)" class="fa-brands fa-youtube" href="https://www.youtube.com/@TOPSTSCHOOL" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Check out source on GitHub" class="fa-brands fa-github" href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Ask team via email" class="fa-solid fa-envelope" href="mailto:TOPSTSCHOOL@gmail.com?subject=[TOPSTSCHOOL] Open Science 101" style="font-weight: 900;"></a>
+</div>
+</div>
+<div class="contributors-article-metadata">
+<p class="contributors-metadata-badge" id="readingTime"></p>
+<p class="contributors-metadata-badge">
+<i class="fa-solid fa-map-pin" style="padding-right: 0.3rem;"></i>Palisades, NY
+        </p>
+<div class="language-switcher">
+<p class="contributors-metadata-badge">
+<i class="fa-solid fa-language" style="padding-right: 0.3rem;"></i>
+<select class="no-chevron-select" id="language-selector" onchange="switchLanguage()">
+<option value="en">
+                        English
+                    </option>
+</select>
+</p>
+</div>
+</div>
+<div class="contributors-publisher-modal" id="contributors-publisher-modal-0">
+<div style="display: flex; gap: 0.25rem;">
+<img alt="TOPSTSCHOOL Development Team's photo" src="https://avatars.githubusercontent.com/u/16084170?s=200&amp;v=4"/>
+<div class="contributor-identity">
+<p>TOPSTSCHOOL Development Team</p>
+<p style="font-weight: 400; font-size: 0.85rem; color: gray; margin-top: -0.25rem; margin-bottom: 0.25rem;">Open Science Contributor</p>
+<div class="contributor-reachout-details">
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="mailto:TOPSTSCHOOL@gmail.com"><i class="fa-solid fa-envelope" style="padding-right: 0.3rem;"></i>Email</a></p>
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="https://github.com/ciesin-geospatial" target="_blank"><i class="fa-brands fa-github" style="padding-right: 0.3rem;"></i>GitHub</a></p>
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="https://www.youtube.com/@TOPSTSCHOOL" target="_blank"><i class="fa-brands fa-youtube" style="padding-right: 0.3rem;"></i>YouTube</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p><a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a> is a global movement that aims to make scientific
+research more accessible, transparent, and collaborative. At <a class="reference internal" href="../../../_resources/glossary.html#term-NASA"><span class="xref std std-term">NASA</span></a>,
+we’re embracing this transformation through our <a class="reference internal" href="../../../_resources/glossary.html#term-TOPS"><span class="xref std std-term">TOPS</span></a> <a class="footnote-reference brackets" href="#id6" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> initiative,
+which seeks to democratize scientific knowledge and empower individuals from
+all walks of life to engage with and contribute to the research process.
+<a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a> is not just a set of practices; it’s a movement that
+seeks to revolutionize the way research is conducted and shared across the
+globe. At its heart, open science aims to make scientific research more
+transparent, accessible, and collaborative. By embracing open science,
+researchers can accelerate discoveries, increase public engagement, and ensure
+that science serves humanity more effectively.</p>
+<p>The <a class="reference internal" href="../../../_resources/glossary.html#term-SCHOOL"><span class="xref std std-term">SCHOOL</span></a>, <strong>Science Core Heuristics for Open Science Outcomes in
+Learning</strong> program is an essential part of NASA’s TOPS initiative. It provides
+a structured, immersive curriculum designed to introduce students,
+researchers, and science enthusiasts to the core principles of Open Science.
+Whether you’re just starting out or already well-versed in scientific
+research, our mission is to help you harness the power of Open Science to
+drive meaningful change.</p>
+<section id="what-is-open-science">
+<h2>What is Open Science?<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#what-is-open-science"></a></h2>
+<p>At its core, Open Science seeks to remove the barriers traditionally
+associated with scientific research. In contrast to conventional research
+models <span class="raw-html">—</span> where data, methodologies, and findings are often limited
+to a select few, Open Science promotes the idea that all aspects of the
+research process should be openly shared and accessible to everyone.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Openness means…</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Sharing Data.</strong> Making raw data available for others to use, analyze,
+and build upon.</p></li>
+<li><p class="sd-card-text"><strong>Transparent Methods.</strong> Sharing methodologies, tools, and software
+openly to enhance reproducibility.</p></li>
+<li><p class="sd-card-text"><strong>Open Access.</strong> Providing access to scientific publications and research
+outputs to ensure that knowledge reaches a wider audience.</p></li>
+</ul>
+</div>
+</details><p><a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a> promotes transparency, encourages collaboration, and
+accelerates scientific discovery by allowing others to replicate studies,
+validate results, and build upon previous work. By adopting Open Science
+principles, the research community can collectively tackle the world’s most
+pressing challenges <span class="raw-html">—</span> from climate change and environmental
+degradation to public health crises and social inequalities.</p>
+<figure class="align-center" id="id10">
+<img alt="Venn Diagram of Open Science" class="transparent-border" src="../../../_images/open-science-venn-diagram.drawio.png">
+<figcaption>
+<p><span class="caption-text">Venn diagram, created using draw.io <a class="footnote-reference brackets" href="#id7" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>, illustrates the four pillars of
+Open Science <span class="raw-html">—</span> <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Access"><span class="xref std std-term">Open Access</span></a>, <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Research"><span class="xref std std-term">Open Research</span></a>, Open
+Code, and <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Data"><span class="xref std std-term">Open Data</span></a>. These interconnected principles promote
+<a class="reference internal" href="../../../_resources/glossary.html#term-Transparency"><span class="xref std std-term">transparency</span></a>, collaboration, and accessibility in research,
+fostering a more trustworthy and inclusive scientific community.</span><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#id10"></a></p>
+</figcaption>
+</img></figure>
+<p>To put it simply, Open science is an umbrella term that encompasses various
+practices aimed at making research more <strong>transparent</strong> and <strong>accessible</strong>. It
+covers the entire research lifecycle, from data collection to publishing
+findings, emphasizing openness and collaboration. You already might be doing
+open science unknowningly if you are:</p>
+<ul class="simple">
+<li><p>Sharing research protocols openly or documenting code used for data analysis.</p></li>
+<li><p>Publishing in open-access journals or sharing <a class="reference internal" href="../../../_resources/glossary.html#term-Preprint"><span class="xref std std-term">preprint</span></a> of research
+articles.</p></li>
+<li><p>Sharing raw datasets and detailed analysis scripts.</p></li>
+</ul>
+</section>
+<section id="why-open-science-matters">
+<h2>Why Open Science Matters?<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#why-open-science-matters"></a></h2>
+<p>The importance of Open Science goes far beyond academia. In today’s
+interconnected world, scientific challenges are increasingly global and
+complex. Problems like climate change, environmental justice, and natural
+disasters demand cross-disciplinary solutions that involve many collaborators.
+<a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a> breaks down silos, enabling diverse teams of researchers,
+policymakers, and citizens to work together in solving real-world problems.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Reasons why open science is vital</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Transparency and Trust.</strong> By making research processes visible and
+open to scrutiny, Open Science enhances trust in scientific findings.</p></li>
+<li><p class="sd-card-text"><strong>Collaboration Across Borders.</strong> Open Science fosters collaboration by
+removing barriers to information sharing, allowing researchers from
+across the globe to work together seamlessly.</p></li>
+<li><p class="sd-card-text"><strong>Faster Innovation.</strong> Open access to data and research outputs reduces
+duplication of effort, speeds up discoveries, and fosters innovation.</p></li>
+<li><p class="sd-card-text"><strong>Inclusive Knowledge.</strong> Open Science ensures that knowledge is not
+limited to specific groups or regions, promoting equity in access to
+information and fostering a more inclusive research community.</p></li>
+</ul>
+</div>
+</details><details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Four key areas where open science makes a significant impact <a class="footnote-reference brackets" href="#id8" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a></span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-0">
+Accessibility</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Citizen Science Initiatives and Engagement:</strong> Open Science
+allows for greater participation from the public, enabling
+citizen scientists to contribute to research efforts and engage
+with scientific discoveries.</p></li>
+<li><p class="sd-card-text"><strong>Lifesaving Access to Medical and Scientific Information:</strong> Open
+Science ensures that critical medical and scientific information
+is accessible to everyone, potentially saving lives by providing
+timely and accurate data.</p></li>
+<li><p class="sd-card-text"><strong>Democratization of the Scientific Process:</strong> By making research
+accessible to all, Open Science democratizes the scientific
+process, giving everyone chance to contribute to and benefit
+from scientific advancements.</p></li>
+<li><p class="sd-card-text"><strong>Increased Earth Observation Accessibility:</strong> Open Science
+expands access to Earth observation data, allowing more people
+to monitor and understan our planet.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-1">
+Efficiency &amp; Innovation</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Cleaner, More Secure Code with More Contributors:</strong> Open-source
+science invites a broader community to contribute to and improve
+scientific software, leading to cleaner, more secure code.</p></li>
+<li><p class="sd-card-text"><strong>Long-Term Maintenance Assistance:</strong> The open-source model
+encourages long-term maintenance and support from the community,
+ensuring that tools and resources remain up-to-date and
+functional.</p></li>
+<li><p class="sd-card-text"><strong>New Monetized Offices and Data Centers:</strong> Open Science can
+lead to the creation of new monetized opportunities, such as
+data centers, that support and enhance scientific research.</p></li>
+<li><p class="sd-card-text"><strong>Transparent Research Spending:</strong> Open Science promotes
+transparency in research spending, making the allocation of funds
+more efficient and accountable.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-2">
+Reproducibility</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Increased Transparency of Research Results:</strong> Open Science
+makes research results more transparent, allowing for easier
+verification and replication of studies.</p></li>
+<li><p class="sd-card-text"><strong>Reliable Results Through Confirmation:</strong> The open sharing of
+data and methodologies enables other researchers to confirm
+findings, leading to more reliable and robust scientific
+outcomes.</p></li>
+<li><p class="sd-card-text"><strong>Reduced Pressure for “Exciting” Research:</strong> By focusing on
+reproducibility and transparency, Open Science reduces the
+pressure to produce “exciting” results just to get published,
+fostering a more honest and rigorous scientific process.</p></li>
+<li><p class="sd-card-text"><strong>More Robust Scientific Products:</strong> Open Science enhances the
+overall quality of scientific research, leading to more
+trustworthy and impactful results.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-3">
+Diversity &amp; Inclusion</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>International Accessibility:</strong> Open Science ensures that
+scientific knowledge is accessible to researchers around the
+world, regardless of their location or resources.</p></li>
+<li><p class="sd-card-text"><strong>Breaking Down Financial Barriers:</strong> Open Science helps to
+dismantle systemic financial barriers, allowing more people to
+participate in and benefit from scientific research.</p></li>
+<li><p class="sd-card-text"><strong>Diversity Among Researchers:</strong> By making science more
+accessible, open science encourages greater diversity among
+researchers, leading to a richer and more inclusive scientific
+community.</p></li>
+<li><p class="sd-card-text"><strong>Equitable Distribution of Opportunity:</strong> Open Science ensures
+that opportunities for research and collaboration are
+distributed more equitably, fostering a more inclusive and
+diverse scientific environment.</p></li>
+</ul>
+</div>
+</div>
+</div>
+</details><p><a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a> isn’t just about making research available <span class="raw-html">—</span>
+it’s about making a difference. By participating in Open Science, you are
+contributing to a global movement that seeks to democratize knowledge, break
+down silos, and create a more equitable world. When scientists, researchers,
+and learners like you come together to share knowledge openly, we amplify our
+ability to solve complex problems and create a future where science benefits
+everyone.</p>
+<p>Imagine the ripple effect your contributions could have: a dataset you share
+could lead to a breakthrough in environmental protection, the method you
+develop could improve public health outcomes, or your insights into climate
+change could help shape policies that protect vulnerable communities. Open
+Science allows you to play a part in something far bigger than yourself.</p>
+<p>The below video summarizes the importance of Open Science. <a class="footnote-reference brackets" href="#id9" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a></p>
+
+<div class="youtube-video-container">
+<iframe allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" frameborder="0" height="auto" src="https://youtube.com/embed/c-bemNZ-IqA?start=0&amp;autoplay=1&amp;cc_load_policy=1&amp;rel=0&amp;controls=1&amp;modestbranding=1" title="YouTube Video Player" width="auto">
+</iframe>
+</div>
+</section>
+<section id="summary-and-up-next">
+<h2>Summary and Up Next<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#summary-and-up-next"></a></h2>
+<p>By understanding open science, you become a part of a global movement to make
+research more inclusive, efficient, and impactful. Open science is about
+breaking down barriers and working together, across borders and disciplines,
+to create a better, more informed world.</p>
+<p>Once you’ve grasped the importance of open science, you’ll be ready to dive
+into the next section, we’ll introduce you to the software and platforms that
+can help you implement open science practices efficiently. We’ll cover
+everything from setting up necessary accounts to configuring IDEs.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-none sd-card-hover docutils">
+<img alt="Accounts setup guide" class="sd-card-img" src="../../../_images/must-have-accounts.png"/>
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Setting up GitHub, ORCID accounts and more</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="accounts-setup.html"><span class="doc">Accounts Setup</span></a></div>
+</div>
+</div>
+<div class="sd-col sd-d-flex-column docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-none sd-card-hover docutils">
+<img alt="Tools setup guide" class="sd-card-img" src="../../../_images/tools-technologies.png"/>
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Tools to empower your Open Science workflows</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="required-tools.html"><span class="doc">Required Tools</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="rubric">References</h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id6" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id2" role="doc-backlink">1</a><span class="fn-bracket">]</span></span>
+<p>NASA launches a new <a class="reference external" href="https://nasa.github.io/Transform-to-Open-Science/">Open Science Curriculum</a>.</p>
+</aside>
+<aside class="footnote brackets" id="id7" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id3" role="doc-backlink">2</a><span class="fn-bracket">]</span></span>
+<p>Learn more about <a class="reference external" href="https://draw.io/">draw.io</a> which is a technology
+stack for building diagramming applications.</p>
+</aside>
+<aside class="footnote brackets" id="id8" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id4" role="doc-backlink">3</a><span class="fn-bracket">]</span></span>
+<p>A wonderful blog by NASA on <a class="reference external" href="https://science.nasa.gov/open-science/why-do-open-science/">Why Do Open Science?</a></p>
+</aside>
+<aside class="footnote brackets" id="id9" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id5" role="doc-backlink">4</a><span class="fn-bracket">]</span></span>
+<p>Dr. Rachael Ainsworth’s TEDx talk on <a class="reference external" href="https://www.youtube.com/watch?v=c-bemNZ-IqA">Research Culture is Broken; Open
+Science can Fix It</a>.</p>
+</aside>
+</aside>
+
+</section>
+</section>
+</div>
+<div class="previous-next">
+<div id="previous-button">
+<a href="../../_modules/_climate/index.html">
+<span><i class="fa fa-chevron-left" style="font-size: 1.5rem;"></i></span>
+</a>
+</div>
+<div id="next-button">
+<a href="accounts-setup.html">
+<span><i class="fa fa-chevron-right" style="font-size: 1.5rem;"></i></span>
+</a>
+</div>
+</div>
+</div></main>
+<aside id="right-sidebar">
+<div class="mini-sidebar-wrapper"><p>On this page</p>
+<ul>
+<li><a class="reference internal" href="#">Open Science 101</a><ul>
+<li><a class="reference internal" href="#what-is-open-science">What is Open Science?</a></li>
+<li><a class="reference internal" href="#why-open-science-matters">Why Open Science Matters?</a></li>
+<li><a class="reference internal" href="#summary-and-up-next">Summary and Up Next</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<footer>
+<div class="footer-element">
+<div class="extra-footer-elements">
+<div>
+                To submit feedback on documentation, visit <a href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX/discussions/new?category=thoughts-and-feedbacks">Feedback</a>.
+            </div>
+<div>Copyright © 2025, TOPSTSCHOOL Development Team.</div>
+<div>Built using <a href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 8.1.3</a>
+                and <a href="https://github.com/xames3/coeus-sphinx-theme" rel="noreferrer">Coeus Sphinx Theme</a>. Last updated: June 27, 2025</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../../_static/documentation_options.js?v=5929fcd5"></script><script src="../../../_static/doctools.js?v=9bcbadda"></script><script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script><script src="../../../_static/clipboard.min.js?v=a7894cd8"></script><script src="../../../_static/copybutton.js?v=f281be69"></script><script defer="defer" src="../../../_static/main.js?v=4c2e7a9f"></script><script defer="defer" src="../../../_static/coeus.js?v=8a3d4ffe"></script><script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+
+</body>
+</html>

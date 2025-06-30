@@ -1,0 +1,336 @@
+<!--
+Coeus Sphinx Theme Main Page Template
+=======================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Monday, August 26 2024
+Last updated on: Friday, November 01 2024
+--><!--
+Coeus Sphinx Theme Main Layout Template
+=======================================
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Tuesday, October 29 2024
+Last updated on: Thursday, October 30 2024
+--><!DOCTYPE html>
+<html lang="en"  data-content_root="./" >
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta property="og:title" content="Science Core Heuristics for Open Science Outcomes in Learning" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/index.html" />
+<meta property="og:site_name" content="TOPSTSCHOOL" />
+<meta property="og:description" content="SCHOOL Homepage" />
+<meta name="description" content="SCHOOL Logo We are thrilled to introduce you to Science Core Heuristics for Open Science Outcomes in Learning( SCHOOL), a flagship initiative under Training program. SCHOOL represents our collectiv..." />
+
+    <title>ScienceCore Heuristics for Open Science Outcomes in Learning (SCHOOL)</title>
+    <meta property="og:title" content="ScienceCore Heuristics for Open Science Outcomes in Learning (SCHOOL)" />
+    <meta name="twitter:title" content="ScienceCore Heuristics for Open Science Outcomes in Learning (SCHOOL)" />
+    <script src="https://kit.fontawesome.com/8bcdaaff4d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="_static/coeus.css?v=7e4c1ec4" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/styles.css?v=28f40da2" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/coeus.css?v=7e4c1ec4" />
+    <link rel="canonical" href="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/index.html" />
+    <link rel="icon" href="_static/favicon.png" />
+    <link rel="search" title="Search" href="search.html" />
+</head>
+
+<body x-data="{ showSidebar: false }" class="antialiased" :class="{ 'overflow-hidden': showSidebar }">
+    <div x-cloak="x-cloak" x-show="showSidebar"
+        class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden"
+        @click.self="showSidebar = false"></div>
+    <div id="page"><!--
+Coeus Sphinx Theme Main Navigation Bar Template
+===============================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Sunday, October 06 2024
+Last updated on: Saturday, December 07 2024
+-->
+<header class="header-pill glass-bevel">
+    <a href="#" class="header-logo">
+        <img height="36" width="36" style="margin-right: 0.5rem;" src="_static/logo.png" alt="Logo" /><span class="header-title">TOPSTSCHOOL</span>
+    </a><button
+        class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden"
+        type="button" @click="showSidebar = true">
+        <svg xmlns="http://www.w3.org/2000/svg" height="36" width="36" viewbox="0 96 960 960" aria-hidden="true"
+            fill="currentColor">
+            <path
+                d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z" />
+        </svg>
+        <span class="sr-only">Toggle navigation menu</span>
+    </button>
+    <div class="header-content"><nav>
+            <a href="_navbar/about-us.html">About</a>
+            <a href="_navbar/getting-involved.html">Get Involved</a>
+            <a href="_navbar/meet-the-team.html">School Yearbook</a>
+        </nav>
+            <div class="header-search"><!--
+Coeus Sphinx Theme Search Box Template
+======================================
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Monday, August 26 2024
+Last updated on: Wednesday, October 30 2024
+-->
+<div x-data="{ isOpen: false }">
+    <button @click="isOpen = !isOpen; $nextTick(() => $refs.search.focus())" aria-label="Toggle search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    <form x-show="isOpen" x-transition @click.outside="isOpen = false" id="searchbox" action="search.html"
+        method="get" class="searchbox">
+        <input x-ref="search" name="q" id="search-input" type="search" aria-label="Search the docs"
+            placeholder="Search documentation" class="glass-bevel" />
+    </form>
+</div>
+            </div></div>
+</header>
+        
+        <div class="universal-wrapper">
+            <div class="hero-wrapper" style="background-image:linear-gradient(to left, #fdde5c,
+                #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3);"">
+                <div class=" hero-content"></div>
+        </div>
+        <div class="outer-content-wrapper"><!--
+Coeus Sphinx Theme Sidebar Template
+===================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Monday, August 26 2024
+Last updated on: Tuesday, October 29 2024
+-->
+<aside id="left-sidebar" :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }">
+    <div class="sidebar-wrapper"><!--
+Coeus Sphinx Theme Navigation Bar Template
+==========================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Monday, August 26 2024
+Last updated on: Saturday, December 07 2024
+-->
+<nav class="flex md:hidden flex-col font-medium mt-4">
+                    <a href="_navbar/about-us.html">About</a>
+                    <a href="_navbar/getting-involved.html">Get Involved</a>
+                    <a href="_navbar/meet-the-team.html">School Yearbook</a>
+        </nav>
+<!--
+Coeus Sphinx Theme Sidebar ToC Template
+=======================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Sunday, August 25 2024
+Last updated on: Tuesday, October 29 2024
+-->
+
+<p class="caption" role="heading"><span class="caption-text">**Modules**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_water/index.html">Water</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_air-quality/index.html">Air Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_disaster/index.html">Disaster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_climate/index.html">Climate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_community/index.html">Community</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Tutorials &amp; Guides**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_tutorials/_001-basics/open-science-101.html">Open Science 101</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_001-basics/accounts-setup.html">Accounts Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_001-basics/required-tools.html">Required Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/contributing-to-school.html">Contributing to SCHOOL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/repository-overview.html">Repository Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/using-sphinx.html">Using Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/making-first-change.html">Making First Change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/initial-commit.html">Initial Commit</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Resources**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_resources/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_resources/feedback.html">Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_navbar/getting-involved.html">How to Get Involved</a></li>
+</ul>
+
+
+    </div>
+</aside>
+
+            <main class="inner-content-wrapper">
+                
+                <span class="fa-solid fa-earth-americas hero-icon"></span>
+                
+<div class="inner-content-wrapper">
+    <div id="content" role="main" class="page-content"><a class="transparent-border reference internal image-reference" href="_images/school-logo-big.png" id="home-page"><img alt="SCHOOL Logo" class="transparent-border align-center" id="home-page" src="_images/school-logo-big.png" style="height: 325px;" />
+</a>
+<section id="sciencecore-heuristics-for-open-science-outcomes-in-learning-school">
+<h1>ScienceCore Heuristics for Open Science Outcomes in Learning (SCHOOL)<a class="headerlink" href="#sciencecore-heuristics-for-open-science-outcomes-in-learning-school" title="Link to this heading"></a></h1>
+<!--
+Coeus Sphinx Theme Title Hero Summary Template
+==============================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Sunday, August 25 2024
+Last updated on: Tuesay, October 29 2024
+-->
+
+<div class="hero-summary">
+    <p>Part of the NASA Transform to Open Science (TOPS) Training initiative.</p>
+</div>
+<!--
+Coeus Sphinx Theme Contributors Template
+========================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Tuesday, October 29 2024
+Last updated on: Wednesday, November 20 2024
+-->
+<div class="contributors-wrapper">
+    <p class="contributors-timestamp">Updated Today</p>
+    <div class="contributors-publisher">
+        
+        <span>Published by <a href="mailto:TOPSTSCHOOL@gmail.com?subject=[TOPSTSCHOOL] ScienceCore Heuristics for Open Science Outcomes in Learning (SCHOOL)" class="contributor-name"
+                data-index="0" aria-label="Ask TOPSTSCHOOL Development Team via email">TOPSTSCHOOL Development Team</a></span>
+        
+        <div class="project-socials">
+            
+            <a class="fa-brands fa-youtube" href="https://www.youtube.com/@TOPSTSCHOOL" target="_blank"
+                aria-label="Share this article via Youtube (opens a new tab)"
+                rel="noopener noreferrer"></a>
+            
+            <a class="fa-brands fa-github" href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX" target="_blank"
+                aria-label="Check out source on GitHub" rel="noopener noreferrer"></a>
+            <a class="fa-solid fa-envelope" href="mailto:TOPSTSCHOOL@gmail.com?subject=[TOPSTSCHOOL] ScienceCore Heuristics for Open Science Outcomes in Learning (SCHOOL)"
+                aria-label="Ask team via email" style="font-weight: 900;"></a>
+        </div>
+    </div>
+    <div class="contributors-article-metadata">
+        <p class="contributors-metadata-badge" id="readingTime"></p>
+        <p class="contributors-metadata-badge">
+            <i class="fa-solid fa-map-pin" style="padding-right: 0.3rem;"></i>Palisades, NY
+        </p>
+        <div class="language-switcher">
+            <p class="contributors-metadata-badge">
+                <i class="fa-solid fa-language" style="padding-right: 0.3rem;"></i>
+                <select id="language-selector" class="no-chevron-select" onchange="switchLanguage()">
+                    
+                    <option value="en" >
+                        English
+                    </option>
+                    
+                </select>
+            </p>
+        </div>
+    </div>
+    
+        <div id="contributors-publisher-modal-0" class="contributors-publisher-modal">
+            <div style="display: flex; gap: 0.25rem;">
+                <img src="https://avatars.githubusercontent.com/u/16084170?s=200&v=4" alt="TOPSTSCHOOL Development Team's photo">
+                <div class="contributor-identity">
+                    <p>TOPSTSCHOOL Development Team</p>
+                    <p style="font-weight: 400; font-size: 0.85rem; color: gray; margin-top: -0.25rem; margin-bottom: 0.25rem;">Open Science Contributor</p>
+                    <div class="contributor-reachout-details">
+                        
+                            <p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="mailto:TOPSTSCHOOL@gmail.com"><i class="fa-solid fa-envelope" style="padding-right: 0.3rem;"></i>Email</a></p>
+                        
+                        
+                            <p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="https://github.com/ciesin-geospatial" target="_blank"><i class="fa-brands fa-github" style="padding-right: 0.3rem;"></i>GitHub</a></p>
+                        
+                        
+                        
+                        
+                        
+                            <p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="https://www.youtube.com/@TOPSTSCHOOL" target="_blank"><i class="fa-brands fa-youtube" style="padding-right: 0.3rem;"></i>YouTube</a></p>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+</div>
+<p>We are thrilled to introduce you to <strong>Science Core Heuristics for Open Science
+Outcomes in Learning</strong> (<a class="reference internal" href="_resources/glossary.html#term-SCHOOL"><span class="xref std std-term">SCHOOL</span></a>), a flagship initiative under
+<span class="raw-html"><a href="https://science.nasa.gov/open-science/os101/" data-original-href="https://science.nasa.gov/open-science/os101/" target="_blank">NASA's Transform to Open Science (TOPS)</a></span> Training program. SCHOOL represents our collective vision to
+make science open, inclusive, and accessible to all. Our mission is to inspire students, educators, and researchers to leverage NASA
+Earth Science Applications and embrace the power of Open Science in solving
+some of the world’s most pressing challenges.</p>
+<p>The SCHOOL project was started with funding from a NASA ROSES Grant under the Transform to Open Science - Training mission.
+The SCHOOL curriculum consists of open, interactive, and interdisciplinary learning modules covering thematic areas including
+water, health and air quality, natural disasters, climate, agriculture, and wildfires, while integrating themes of population
+and infrastructure across the modules. Within each module, lessons demonstrate how to access, store, process, analyze, and communicate
+open data following the data science life cycle, and focusing on FAIR principles for scientific data management.</p>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<div class="toctree-wrapper compound">
+</div>
+<script src="https://giscus.app/client.js"
+    data-repo="ciesin-geospatial/TOPSTSCHOOL-SPHINX"
+    data-repo-id="R_kgDONF9JfA"
+    data-category="Thoughts and Feedbacks"
+    data-category-id="DIC_kwDONF9JfM4Cj3LW"
+    data-mapping="pathname"
+    data-strict="0"
+    data-reactions-enabled="1"
+    data-emit-metadata="0"
+    data-input-position="bottom"
+    data-theme="light"
+    data-lang="en"
+    data-loading="lazy"
+    crossorigin="anonymous"
+    async>
+</script></section>
+</div><!--
+Coeus Sphinx Theme Page Buttons Template
+========================================
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Monday, August 26 2024
+Last updated on: Tuesday, October 29 2024
+-->
+<div class="previous-next">
+    <div id="previous-button" style="opacity: 0.3;" >
+        <a href="">
+            <span><i class="fa fa-chevron-left" style="font-size: 1.5rem;"></i></span>
+        </a>
+    </div>
+    <div id="next-button" >
+        <a href="_documentation/_modules/_water/index.html">
+            <span><i class="fa fa-chevron-right" style="font-size: 1.5rem;"></i></span>
+        </a>
+    </div>
+</div>
+            </main>
+        </div>
+    </div><!--
+Coeus Sphinx Theme Footer Template
+==================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Thursday, August 29 2024
+Last updated on: Tuesday, October 29 2024
+-->
+<footer>
+    <div class="footer-element">
+        <div class="extra-footer-elements">
+            <div>
+                To submit feedback on documentation, visit <a href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX/discussions/new?category=thoughts-and-feedbacks">Feedback</a>.
+            </div>
+            <div>Copyright © 2025, TOPSTSCHOOL Development Team.</div>
+            <div>Built using <a href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 8.1.3</a>
+                and <a href="https://github.com/xames3/coeus-sphinx-theme" rel="noreferrer">Coeus Sphinx Theme</a>. Last updated: June 27, 2025</div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="_static/documentation_options.js?v=5929fcd5"></script><script src="_static/doctools.js?v=9bcbadda"></script><script src="_static/sphinx_highlight.js?v=dc90522c"></script><script src="_static/clipboard.min.js?v=a7894cd8"></script><script src="_static/copybutton.js?v=f281be69"></script><script defer="defer" src="_static/main.js?v=4c2e7a9f"></script><script defer="defer" src="_static/coeus.js?v=8a3d4ffe"></script><script src="_static/design-tabs.js?v=f930bc37"></script>
+    
+    </div>
+</body>
+
+</html>

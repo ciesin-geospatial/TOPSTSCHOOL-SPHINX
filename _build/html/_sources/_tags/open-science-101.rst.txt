@@ -1,0 +1,18 @@
+.. _sphx_tag_open-science-101:
+
+===============================================================================
+Tagged Pages
+===============================================================================
+
+.. title-hero::
+    :icon: fa-solid fa-tags
+    :summary: All pages with selected tags.
+
+.. toctree::
+    :maxdepth: 1
+    :caption: OPEN-SCIENCE-101
+
+    ../_documentation/_tutorials/_001-basics/accounts-setup.rst
+    ../_documentation/_tutorials/_001-basics/open-science-101.rst
+    ../_documentation/_tutorials/_001-basics/required-tools.rst
+    ../_resources/glossary.rst

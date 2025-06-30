@@ -1,0 +1,16 @@
+.. _sphx_tag_github:
+
+===============================================================================
+Tagged Pages
+===============================================================================
+
+.. title-hero::
+    :icon: fa-solid fa-tags
+    :summary: All pages with selected tags.
+
+.. toctree::
+    :maxdepth: 1
+    :caption: GITHUB
+
+    ../_documentation/_tutorials/_001-basics/accounts-setup.rst
+    ../_documentation/_tutorials/_002-contributing/initial-commit.rst

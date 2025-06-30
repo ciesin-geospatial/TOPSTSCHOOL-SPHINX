@@ -1,0 +1,15 @@
+.. _sphx_tag_disaster:
+
+===============================================================================
+Tagged Pages
+===============================================================================
+
+.. title-hero::
+    :icon: fa-solid fa-tags
+    :summary: All pages with selected tags.
+
+.. toctree::
+    :maxdepth: 1
+    :caption: DISASTER
+
+    ../_documentation/_modules/_disaster/index.rst

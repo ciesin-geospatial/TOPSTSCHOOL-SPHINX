@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+
+<html data-content_root="../../../" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Accounts Setup" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/_documentation/_tutorials/_001-basics/accounts-setup.html" property="og:url"/>
+<meta content="TOPSTSCHOOL" property="og:site_name"/>
+<meta content="A guide to setting up essential accounts required for
+contributing to the open science." property="og:description"/>
+<meta content="getting-started open-science-101 github orcid nasa-earthdata zenodo In the world of open science, certain digital tools and platforms are indispensable for sharing research, collaborating with peer..." name="description"/>
+<title>Accounts Setup</title>
+<meta content="Accounts Setup" property="og:title"/>
+<meta content="Accounts Setup" name="twitter:title"/>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/8bcdaaff4d.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link href="../../../_static/pygments.css?v=8e8a900e" rel="stylesheet" type="text/css">
+<link href="../../../_static/coeus.css?v=7e4c1ec4" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/styles.css?v=28f40da2" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/bootstrap-carousel.min.css?v=fd277c8b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/carousel-custom.css?v=6fe5d8c5" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/coeus.css?v=7e4c1ec4" rel="stylesheet" type="text/css"/>
+<link href="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/_documentation/_tutorials/_001-basics/accounts-setup.html" rel="canonical"/>
+<link href="../../../_static/favicon.png" rel="icon"/>
+<link href="../../../search.html" rel="search" title="Search"/>
+</link></head>
+<body :class="{ 'overflow-hidden': showSidebar }" class="antialiased" x-data="{ showSidebar: false }">
+<div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="x-cloak" x-show="showSidebar"></div>
+<div id="page">
+<header class="header-pill glass-bevel">
+<a class="header-logo" href="../../../index.html">
+<img alt="Logo" height="36" src="../../../_static/logo.png" style="margin-right: 0.5rem;" width="36"/><span class="header-title">TOPSTSCHOOL</span>
+</a><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
+<svg aria-hidden="true" fill="currentColor" height="36" viewbox="0 96 960 960" width="36" xmlns="http://www.w3.org/2000/svg">
+<path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
+</svg>
+<span class="sr-only">Toggle navigation menu</span>
+</button>
+<div class="header-content"><nav>
+<a href="../../../_navbar/about-us.html">About</a>
+<a href="../../../_navbar/getting-involved.html">Get Involved</a>
+<a href="../../../_navbar/meet-the-team.html">School Yearbook</a>
+</nav>
+<div class="header-search">
+<div x-data="{ isOpen: false }">
+<button @click="isOpen = !isOpen; $nextTick(() =&gt; $refs.search.focus())" aria-label="Toggle search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<form @click.outside="isOpen = false" action="../../../search.html" class="searchbox" id="searchbox" method="get" x-show="isOpen" x-transition="">
+<input aria-label="Search the docs" class="glass-bevel" id="search-input" name="q" placeholder="Search documentation" type="search" x-ref="search"/>
+</form>
+</div>
+</div></div>
+</header>
+<div class="universal-wrapper">
+<div "="" class="hero-wrapper" style="background-image:linear-gradient(to left, #fdde5c,
+                #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3);">
+<div class="hero-content"></div>
+</div>
+<div class="outer-content-wrapper">
+<aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" id="left-sidebar">
+<div class="sidebar-wrapper">
+<nav class="flex md:hidden flex-col font-medium mt-4">
+<a href="../../../_navbar/about-us.html">About</a>
+<a href="../../../_navbar/getting-involved.html">Get Involved</a>
+<a href="../../../_navbar/meet-the-team.html">School Yearbook</a>
+</nav>
+
+<p class="caption" role="heading"><span class="caption-text">**Modules**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_water/index.html">Water</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_air-quality/index.html">Air Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_disaster/index.html">Disaster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_climate/index.html">Climate</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Tutorials &amp; Guides**</span></p>
+<ul class="current">
+<li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') }"><a :class="{ 'expanded': expanded }" @click="expanded = !expanded" class="reference internal expandable" href="open-science-101.html">Open Science 101<button @click.prevent.stop="expanded = !expanded" type="button"><i class="fa-solid fa-circle-plus"></i></button></a><ul class="current" x-show="expanded">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Accounts Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="required-tools.html">Required Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') }"><a :class="{ 'expanded': expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../_002-contributing/contributing-to-school.html">Contributing to SCHOOL<button @click.prevent.stop="expanded = !expanded" type="button"><i class="fa-solid fa-circle-plus"></i></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/repository-overview.html">Repository Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/using-sphinx.html">Using Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/making-first-change.html">Making First Change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/initial-commit.html">Initial Commit</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Resources**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../_resources/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../_resources/feedback.html">Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../_navbar/getting-involved.html">How to Get Involved</a></li>
+</ul>
+</div>
+</aside>
+<main class="inner-content-wrapper">
+<span class="fa-solid fa-badge-check hero-icon"></span>
+<div class="inner-content-wrapper">
+<nav aria-label="breadcrumbs" class="breadcrumbs space-x-1">
+<a class="breadcrumbs-passive" href="../../../index.html">
+<span class="hidden md:inline">TOPSTSCHOOL</span>
+<svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
+</svg>
+</a><a class="breadcrumbs-passive" href="open-science-101.html">Open Science 101</a>
+<div style="margin-right: .25rem;">/</div><span aria-current="page" class="breadcrumbs-active" style="margin-left: 0rem">Accounts Setup</span>
+</nav>
+<div class="page-content" id="content" role="main"><section id="accounts-setup">
+<span id="id1"></span><h1>Accounts Setup<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#accounts-setup"></a></h1>
+
+<div class="hero-summary">
+<p>Set up essential accounts needed to contribute to Open Science. Follow
+these easy, step-by-step guides to create and configure the accounts
+required for contributing towards open science.</p>
+</div>
+<p class="tags"><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/getting-started.html"><span class="doc">getting-started</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/open-science-101.html"><span class="doc">open-science-101</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/github.html"><span class="doc">github</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/orcid.html"><span class="doc">orcid</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/nasa-earthdata.html"><span class="doc">nasa-earthdata</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/zenodo.html"><span class="doc">zenodo</span></a></p>
+
+<div class="contributors-wrapper">
+<p class="contributors-timestamp">November 06, 2024</p>
+<div class="contributors-publisher">
+<span>Published by <a aria-label="Ask TOPSTSCHOOL Development Team via email" class="contributor-name" data-index="0" href="mailto:TOPSTSCHOOL@gmail.com?subject=[TOPSTSCHOOL] Accounts Setup">TOPSTSCHOOL Development Team</a></span>
+<div class="project-socials">
+<a aria-label="Share this article via Youtube (opens a new tab)" class="fa-brands fa-youtube" href="https://www.youtube.com/@TOPSTSCHOOL" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Check out source on GitHub" class="fa-brands fa-github" href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Ask team via email" class="fa-solid fa-envelope" href="mailto:TOPSTSCHOOL@gmail.com?subject=[TOPSTSCHOOL] Accounts Setup" style="font-weight: 900;"></a>
+</div>
+</div>
+<div class="contributors-article-metadata">
+<p class="contributors-metadata-badge" id="readingTime"></p>
+<p class="contributors-metadata-badge">
+<i class="fa-solid fa-map-pin" style="padding-right: 0.3rem;"></i>Palisades, NY
+        </p>
+<div class="language-switcher">
+<p class="contributors-metadata-badge">
+<i class="fa-solid fa-language" style="padding-right: 0.3rem;"></i>
+<select class="no-chevron-select" id="language-selector" onchange="switchLanguage()">
+<option value="en">
+                        English
+                    </option>
+</select>
+</p>
+</div>
+</div>
+<div class="contributors-publisher-modal" id="contributors-publisher-modal-0">
+<div style="display: flex; gap: 0.25rem;">
+<img alt="TOPSTSCHOOL Development Team's photo" src="https://avatars.githubusercontent.com/u/16084170?s=200&amp;v=4"/>
+<div class="contributor-identity">
+<p>TOPSTSCHOOL Development Team</p>
+<p style="font-weight: 400; font-size: 0.85rem; color: gray; margin-top: -0.25rem; margin-bottom: 0.25rem;">Open Science Contributor</p>
+<div class="contributor-reachout-details">
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="mailto:TOPSTSCHOOL@gmail.com"><i class="fa-solid fa-envelope" style="padding-right: 0.3rem;"></i>Email</a></p>
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="https://github.com/ciesin-geospatial" target="_blank"><i class="fa-brands fa-github" style="padding-right: 0.3rem;"></i>GitHub</a></p>
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="https://www.youtube.com/@TOPSTSCHOOL" target="_blank"><i class="fa-brands fa-youtube" style="padding-right: 0.3rem;"></i>YouTube</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>In the world of open science, certain digital tools and platforms are
+indispensable for sharing research, collaborating with peers, and managing
+your scientific identity. Before diving into your open science journey,
+setting up accounts on some key platforms will empower you to fully
+participate in this transparent, collaborative ecosystem. Below, we’ll walk
+through the importance of each account, real-world use cases, and practical
+examples of how they are utilized in open science workflows.</p>
+<section id="github">
+<span id="about-github"></span><h2>GitHub<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#github"></a></h2>
+<img alt="https://github.blog/wp-content/uploads/2023/10/Collaboration-DarkMode-2.png?w=1200:alt:GitHubbanner" src="https://github.blog/wp-content/uploads/2023/10/Collaboration-DarkMode-2.png?w=1200:alt:GitHubbanner">
+<p><a class="reference internal" href="../../../_resources/glossary.html#term-GitHub"><span class="xref std std-term">GitHub</span></a> is one of the most powerful tools in the world of collaborative
+research, open science, and software development. It’s more than just a
+platform for storing code <span class="raw-html">—</span> it’s a vibrant community where you can
+contribute to projects, share data, and collaborate with fellow researchers
+from all over the world. Whether you’re a beginner or a seasoned coder, GitHub
+provides the tools you need to manage projects, contribute to
+<a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a>, and share your findings.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Importance for Open Science</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Version Control.</strong> Keeps track of all changes to your code, making it
+easy to revert to previous versions if necessary. This is crucial in
+research projects where <a class="reference internal" href="../../../_resources/glossary.html#term-Reproducibility"><span class="xref std std-term">reproducibility</span></a> is key.</p></li>
+<li><p class="sd-card-text"><strong>Collaborative Research.</strong> Enables multiple researchers to work
+together on the same project, with features like forking, pull requests,
+and issue tracking. For instance, a team of climate scientists may use
+GitHub to manage code for analyzing climate models. Each team member
+contributes code and reviews changes through pull requests.</p></li>
+<li><p class="sd-card-text"><strong>Open Access.</strong> You can make your repositories public, allowing others
+to view, use, and contribute to your research. Example for this would be
+an ecologist sharing a Python package on GitHub that automates the
+analysis of satellite imagery, allowing others to replicate or build on
+the work.</p></li>
+</ul>
+</div>
+</details><p>At its core, GitHub is a hosting service for version control using Git. This
+means it helps you track changes in your work, collaborate with others
+seamlessly, and manage multiple versions of a project. Many of NASA’s open
+science projects, including the <a class="reference internal" href="../../../_resources/glossary.html#term-TOPS"><span class="xref std std-term">TOPS</span></a> <a class="reference internal" href="../../../_resources/glossary.html#term-SCHOOL"><span class="xref std std-term">SCHOOL</span></a> initiative, use
+GitHub to share their work and invite contributions from the global community.
+So, setting up a GitHub account is the first step toward being part of this
+exciting, inclusive movement.</p>
+<p>Let’s walk through how to create your personal GitHub account and get started
+with open science!</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you already have a GitHub account, you can skip this guide and checkout
+things to do to <a class="reference internal" href="#securing-your-github-account"><span class="std std-ref">Securing Your GitHub Account</span></a> below.</p>
+</div>
+<section id="creating-github-account">
+<span id="id2"></span><h3>Creating GitHub Account<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#creating-github-account"></a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://github.com/">GitHub</a>.</p></li>
+<li><p>In the upper-right corner of the page, click on the <strong>Sign up</strong> button to
+start creating your personal account. GitHub will guide you through the
+process, one step at a time.</p></li>
+<li><p>You will be asked for a <strong>username</strong>, <strong>email address</strong>, and to create a
+<strong>password</strong>.</p></li>
+<li><p>Once you’ve entered your details, <a class="reference internal" href="../../../_resources/glossary.html#term-GitHub"><span class="xref std std-term">GitHub</span></a> will send a verification
+email to the address you provided.</p></li>
+<li><p>Check your inbox (and your spam folder if you don’t see it) and click the
+link to verify your email address.</p></li>
+<li><p>Without verifying your email, you won’t be able to perform certain tasks
+like creating repositories, so this step is important!</p></li>
+<li><p>You’ll be asked to complete a simple CAPTCHA (a quick task to confirm
+you’re not a robot). Just follow the instructions, and you’re good to go.</p></li>
+<li><p>GitHub will prompt you to choose a plan. For most users just starting with
+<a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a>, the <strong>Free</strong> plan is more than enough. You can always
+upgrade later if you need advanced features like private repositories, but
+for now, you’re all set with the free option!</p></li>
+<li><p>Once your account is set up, you’ll land on your GitHub dashboard. This is
+your home base for creating projects, exploring repositories, and
+contributing to open science. GitHub offers a helpful tutorial called
+“<a class="reference external" href="https://docs.github.com/en/get-started/start-your-journey/hello-world">Hello World</a>” to get you started with the basics <span class="raw-html">—</span> like
+creating your first repository, etc.</p></li>
+</ol>
+<a class="transparent-border reference internal image-reference" href="https://octodex.github.com/images/NUX_Octodex.gif"><img alt="GitHub Octocat" class="transparent-border align-center" src="https://octodex.github.com/images/NUX_Octodex.gif" style="width: 500px;"/>
+</a>
+<p>But before you move on, take a moment to congratulate yourself. You’ve just
+taken a significant step toward being part of the open science community!</p>
+</section>
+<section id="securing-your-github-account">
+<span id="id3"></span><h3>Securing Your GitHub Account<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#securing-your-github-account"></a></h3>
+<p>GitHub is an integral platform for collaborative research and open-source
+projects, but with this openness comes the need for robust security measures.
+By following best practices, you can ensure your research and data are
+protected against unauthorized access. As of March 2023, GitHub required all
+users who contribute code on <a class="reference external" href="https://github.com/">GitHub</a> to enable one or more forms of
+two-factor authentication (2FA). Here’s a detailed guide on securing your
+GitHub account. All the security settings are accessible using the same steps.</p>
+<ul class="simple">
+<li><p>Navigate to Security Settings by clicking on to your
+<span class="menuselection">Profile ‣ Settings ‣ Password and authentication</span></p></li>
+</ul>
+<div class="scbs-carousel scbs-slide scbs-carousel-fade" id="carousel-0">
+<div class="scbs-carousel-indicators">
+<button aria-current="true" aria-label="Slide 1" class="scbs-active" data-bs-slide-to="0" data-bs-target="#carousel-0" type="button"></button>
+<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carousel-0" type="button"></button>
+<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carousel-0" type="button"></button>
+</div>
+<div class="scbs-carousel-inner">
+<div class="scbs-carousel-item scbs-active">
+<img alt="Navigate to your profile - GitHub" class="transparent-border no-rounded-corners scbs-d-block scbs-w-100" src="../../../_images/github-secure-profile.png"/>
+</div>
+<div class="scbs-carousel-item">
+<img alt="Select Settings - GitHub" class="transparent-border no-rounded-corners scbs-d-block scbs-w-100" src="../../../_images/github-secure-settings.png"/>
+</div>
+<div class="scbs-carousel-item">
+<img alt="Choose Password and authentication - GitHub" class="transparent-border no-rounded-corners scbs-d-block scbs-w-100" src="../../../_images/github-secure-password.png"/>
+</div>
+</div>
+<button class="scbs-carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-0" type="button">
+<span aria-hidden="true" class="scbs-carousel-control-prev-icon"></span>
+<span class="scbs-visually-hidden">Previous</span>
+</button>
+<button class="scbs-carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-0" type="button">
+<span aria-hidden="true" class="scbs-carousel-control-next-icon"></span>
+<span class="scbs-visually-hidden">Next</span>
+</button>
+</div>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-0">
+Two-factor Authentication (2FA)</label><div class="sd-tab-content docutils">
+<p>We strongly recommend that you configure 2FA for your account. 2FA is
+an extra layer of security that can help keep your account secure.
+Two-factor Authentication (2FA) adds an extra layer of security to
+your GitHub account by requiring a second form of verification beyond
+just your password. Here’s how to set it up:</p>
+<a class="reference internal image-reference" href="../../../_images/github-secure-2fa.png"><img alt="Two-factor authentication - GitHub" class="align-center" src="../../../_images/github-secure-2fa.png" style="width: 635.4px; height: 386.4px;"/>
+</a>
+<ul class="simple">
+<li><p>Under the “Two-factor authentication” section, click the button to
+begin the setup process. Choose your authentication method
+<a class="reference internal" href="../../../_resources/glossary.html#term-GitHub"><span class="xref std std-term">GitHub</span></a> offers several 2FA options <a class="footnote-reference brackets" href="#id15" id="id4" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a>.</p></li>
+<li><p>Follow the setup instructions and remaining prompts to complete the
+2FA setup. Ensure you test the 2FA method to confirm it’s working
+properly.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-1">
+Adding a Passkey</label><div class="sd-tab-content docutils">
+<p>You can add passkeys to your account so that you can sign in safely
+and easily, without requiring a password and two-factor
+authentication. You can also use passkeys when performing a sensitive
+action (sudo mode), or to authenticate a password reset.</p>
+<p>Passkeys allow you to sign in securely to GitHub in your browser
+without having to input your password. If you use two-factor
+authentication (2FA), passkeys satisfy both password and 2FA
+requirements, so you can complete your sign in with a single step. If
+you don’t use 2FA, using a passkey will skip the requirement to verify
+a new device via email. You can also use passkeys for sudo mode and
+resetting your password.</p>
+<p>Passkeys are pairs of cryptographic keys (a public key and a private
+key) that are stored by an authenticator you control. The
+authenticator can prove that a user is present and is authorized to
+use the passkey.</p>
+<a class="reference internal image-reference" href="../../../_images/github-secure-passkeys.png"><img alt="Passkeys - GitHub" class="align-center" src="../../../_images/github-secure-passkeys.png" style="width: 635.4px; height: 376.8px;"/>
+</a>
+<ul class="simple">
+<li><p>Under the “Passkeys” section, click the button which says “Add a
+passkey” to begin the a process.</p></li>
+<li><p>Follow the setup instructions and remaining prompts to complete the
+setup. <a class="footnote-reference brackets" href="#id16" id="id5" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> At the prompt, follow the steps outlined by the passkey provider.</p></li>
+<li><p>On the next page, review the information confirming that a passkey
+was successfully registered, then click Done.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-2">
+Connect with SSH <span class="raw-html"><span class="status-badge new">New</span></span></label><div class="sd-tab-content docutils">
+<p>You can access and write data in repositories on GitHub using SSH
+(Secure Shell Protocol). When you connect via SSH, you
+authenticate using a private key file on your local machine. When
+you set up SSH, you will need to generate a new private SSH key
+and add it to the SSH agent. You must also add the public SSH key
+to your account on GitHub before you use the key to authenticate
+or sign commits.</p>
+<p><a class="reference external" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Learn more</a> <span class="raw-html"><i class="fa-solid fa-chevron-right fa-2xs link-auxillaries"></i></span></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Using the SSH protocol, you can connect and authenticate to
+remote servers and services. With SSH keys, you can connect to
+GitHub without supplying your username and personal access
+token at each visit. You can also use an SSH key to sign
+commits.</p>
+</div>
+</div>
+</div>
+</section>
+</img></section>
+<section id="orcid">
+<span id="about-orcid"></span><h2>ORCID<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#orcid"></a></h2>
+<p>Next, you’ll learn how to create your <a class="reference internal" href="../../../_resources/glossary.html#term-ORCID"><span class="xref std std-term">ORCID</span></a> account, an important step
+to ensure that your research and contributions are easily identifiable and
+accessible in the Open Science community. Don’t worry if this is your first
+time doing this <span class="raw-html">—</span> the process is straightforward, and this guide will help you through each step. Before we dive into the steps, let’s talk
+about why having an ORCID account is important.</p>
+<p><a class="reference internal" href="../../../_resources/glossary.html#term-ORCID"><span class="xref std std-term">ORCID</span></a> provides a unique, persistent identifier for researchers,
+ensuring that your contributions are correctly attributed to you, regardless
+of any changes <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a>, where collaboration and transparency are
+key. Your ORCID profile becomes your digital fingerprint in the world of
+research, linking your work to your name in a global, accessible database.</p>
+<section id="creating-orcid-account">
+<span id="id6"></span><h3>Creating ORCID Account<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#creating-orcid-account"></a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://orcid.org/register">ORCID</a>.</p></li>
+<li><p>You’ll see a form asking for some basic information. No worries, this will
+only take a minute or two. Enter your information like your <strong>first</strong> and
+<strong>last</strong> name, <strong>primary email address</strong> (this is where all your
+notifications will be sent), possibly a <strong>secondary email address</strong>
+(optional but recommended, to ensure you don’t lose access in case you
+forget your credentials).</p></li>
+<li><p>Next would be the password, make sure your password is something
+memorable but secure. Instructions about the password requirements would be
+mentioned while entering the password.</p></li>
+<li><p>Before you complete the registration, you’ll need to agree to ORCID’s terms.
+These are pretty straightforward and ensure that your data is used
+responsibly.</p></li>
+<li><p>Now that your account is created, ORCID will send a verification email to
+primary email address you provided. It’s important to verify your email to
+complete the setup. Check your inbox (and your spam folder if you don’t see
+it) and click the link to verify your email address.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Set your visibility preferences. <a class="reference internal" href="../../../_resources/glossary.html#term-ORCID"><span class="xref std std-term">ORCID</span></a> gives you control over the
+privacy of your information. You can set your profile to be:</p>
+<ul class="simple">
+<li><p><strong>Everyone.</strong> Anyone can see your information.</p></li>
+<li><p><strong>Trusted parties.</strong> Only trusted parties (like your institution) can
+view your profile.</p></li>
+<li><p><strong>Only me.</strong> Only you can see your information.</p></li>
+</ul>
+<p>It is best to keep it <strong>Everyone</strong> to maximize visibility for your work in
+<a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a>, but you can always change it later.</p>
+</div>
+</section>
+<section id="make-the-most-of-your-orcid-account">
+<span id="customizing-orcid-account"></span><h3>Make the Most of Your ORCID Account<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#make-the-most-of-your-orcid-account"></a></h3>
+<p>Now that you’ve created and set up your ORCID account, you’re ready to start
+using your <a class="reference internal" href="../../../_resources/glossary.html#term-ORCID"><span class="xref std std-term">ORCID</span></a> ID in your research. Include it in your <strong>CV</strong>,
+<strong>Research papers</strong>, <strong>Articles</strong>, <strong>Conference presentations</strong> and <strong>Grant
+applications</strong>. This unique identifier will ensure that all your work is
+properly attributed to you, wherever it’s shared.</p>
+<p>Personalizing your ORCID account is crucial in making sure your ORCID profile
+represents you well. The more information you provide, the easier it will be
+for collaborators and institutions to find you and recognize your work. ORCID
+supports integration with various platforms, including <a class="reference internal" href="../../../_resources/glossary.html#term-GitHub"><span class="xref std std-term">GitHub</span></a> and
+LinkedIn. You can link your ORCID profile to your GitHub account to create a
+cohesive professional identity across platforms.</p>
+<figure class="align-center" id="id27">
+<img alt="Link ORCID with GitHub" class="transparent-border no-rounded-corners" src="../../../_images/orcid-github-link.png"/>
+<figcaption>
+<p><span class="caption-text">ORCID integrated with GitHub account.</span><a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#id27"></a></p>
+</figcaption>
+</figure>
+<p>Your ORCID profile is a living document. As your career progresses, be sure to
+keep it updated with your latest contributions, projects, and affiliations.
+This is especially important in <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a>, where collaboration and
+visibility are key. Set a reminder to check and update your profile every few
+months. That way, your information stays fresh and accurate.</p>
+<p>With your ORCID account ready, you’re now one step closer to engaging fully
+with the Open Science community. Remember, <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a> is all about
+transparency, accessibility, and collaboration. By taking the time to set up
+your ORCID account, you’re contributing to a global movement dedicated to
+making science open to all.</p>
+</section>
+</section>
+<section id="zenodo">
+<span id="about-zenodo"></span><h2>Zenodo<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#zenodo"></a></h2>
+<img alt="Zenodo banner" src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Zenodo-gradient-square.svg/1200px-Zenodo-gradient-square.svg.png"/>
+<p>Zenodo is a versatile, <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Access"><span class="xref std std-term">open access</span></a> <a class="reference internal" href="../../../_resources/glossary.html#term-Data-Repository"><span class="xref std std-term">data repository</span></a> developed
+under the European OpenAIRE program and operated by CERN. Launched to support
+the open science movement, Zenodo provides a platform for researchers to
+share, publish, and archive a wide variety of research outputs, including
+datasets, software, publications, and multimedia. It is an indispensable tool
+for scientists committed to the principles of open science, ensuring that
+their work is easily findable, accessible, citable, and reusable.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Importance in Open Science</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Long-Term Preservation and Accessibility.</strong> Zenodo ensures that
+research outputs are archived securely and remain accessible over the
+long term. By partnering with CERN, a world leader in data preservation,
+Zenodo offers robust infrastructure that guarantees your work will not
+be lost or forgotten.</p></li>
+<li><p class="sd-card-text"><strong>DOIs for Every Output.</strong> One of Zenodo’s most powerful features is its
+ability to assign DOIs (Digital Object Identifiers) to all research
+outputs. This feature gives your work a permanent, citable reference,
+ensuring that you receive proper credit and recognition.</p></li>
+<li><p class="sd-card-text"><strong>Supporting Transparency and Reproducibility.</strong> Zenodo ensures that
+research outputs are openly available and reproducible. By archiving
+data and software with detailed <a class="reference internal" href="../../../_resources/glossary.html#term-Metadata"><span class="xref std std-term">metadata</span></a> and <a class="reference internal" href="../../../_resources/glossary.html#term-Licensing"><span class="xref std std-term">licensing</span></a>
+information, researchers make it easier for others to validate findings
+and build upon existing work.</p></li>
+<li><p class="sd-card-text"><strong>Integration with GitHub.</strong> Zenodo integrates seamlessly with GitHub, a
+popular platform for hosting code and collaborating on software
+projects. Researchers can set up Zenodo to automatically archive GitHub
+repositories, creating versioned DOIs for each software release.</p></li>
+</ul>
+</div>
+</details><p>Zenodo plays a crucial role in the scientific ecosystem by offering free and
+secure data hosting while also assigning Digital Object Identifiers (DOIs) to
+ensure research outputs are properly credited and remain citable. Zenodo is a
+popular choice for publishing datasets in a citable format. Researchers can
+upload large datasets, organize them with detailed metadata, and share them
+with a DOI that ensures proper citation and credit. Software is an
+increasingly important part of research, and Zenodo provides a reliable way to
+share and cite code. Researchers can link their <a class="reference internal" href="../../../_resources/glossary.html#term-GitHub"><span class="xref std std-term">GitHub</span></a> repositories
+and create DOIs for specific releases.</p>
+<section id="creating-zenodo-account">
+<span id="id7"></span><h3>Creating Zenodo Account<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#creating-zenodo-account"></a></h3>
+<p>Creating a Zenodo account is super simple if you already have a GitHub or an
+ORCID account. If not already, checkout <a class="reference internal" href="#creating-github-account"><span class="std std-ref">Creating GitHub Account</span></a> or
+<a class="reference internal" href="#creating-orcid-account"><span class="std std-ref">Creating ORCID Account</span></a>.</p>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://zenodo.org/">Zenodo</a>.</p></li>
+<li><p>Click on Sign up. Here, you can choose to either sign up with your
+information by providing them or you can link your GitHub or ORCID accounts.
+If you choose the former, fill in the necessary details like your
+<strong>username</strong>, <strong>full name</strong>, <strong>affiliations</strong>, <strong>email</strong> and a <strong>password</strong>.</p></li>
+<li><p>Once everything is entered, simply click Sign Up.</p></li>
+</ol>
+</section>
+<section id="integrating-with-github-and-orcid">
+<span id="customizing-zenodo-account"></span><h3>Integrating with GitHub and ORCID<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#integrating-with-github-and-orcid"></a></h3>
+<p>Now that you’ve created and set up your Zenodo account, you’re ready to link it
+with GitHub and ORCID. Follow the on screen instructions and integrate your
+respective accounts. The complete integration would look something like below:</p>
+<div class="scbs-carousel scbs-slide scbs-carousel-fade" id="carousel-1">
+<div class="scbs-carousel-indicators">
+<button aria-current="true" aria-label="Slide 1" class="scbs-active" data-bs-slide-to="0" data-bs-target="#carousel-1" type="button"></button>
+<button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carousel-1" type="button"></button>
+<button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carousel-1" type="button"></button>
+</div>
+<div class="scbs-carousel-inner">
+<div class="scbs-carousel-item scbs-active">
+<img alt="Navigate to your profile - Zenodo" class="transparent-border no-rounded-corners scbs-d-block scbs-w-100" src="../../../_images/zenodo-choose-profile.png"/>
+</div>
+<div class="scbs-carousel-item">
+<img alt="Link Accounts - Zenodo" class="transparent-border no-rounded-corners scbs-d-block scbs-w-100" src="../../../_images/zenodo-link-accounts.png"/>
+</div>
+<div class="scbs-carousel-item">
+<img alt="Linked Accounts (GitHub, ORCID and OpenAIRE) - Zenodo" class="transparent-border no-rounded-corners scbs-d-block scbs-w-100" src="../../../_images/zenodo-link-all.png"/>
+</div>
+</div>
+<button class="scbs-carousel-control-prev" data-bs-slide="prev" data-bs-target="#carousel-1" type="button">
+<span aria-hidden="true" class="scbs-carousel-control-prev-icon"></span>
+<span class="scbs-visually-hidden">Previous</span>
+</button>
+<button class="scbs-carousel-control-next" data-bs-slide="next" data-bs-target="#carousel-1" type="button">
+<span aria-hidden="true" class="scbs-carousel-control-next-icon"></span>
+<span class="scbs-visually-hidden">Next</span>
+</button>
+</div>
+</section>
+</section>
+<section id="nasa-earthdata">
+<span id="about-nasa-earthdata"></span><h2>NASA EarthData<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#nasa-earthdata"></a></h2>
+<p><a class="reference internal" href="../../../_resources/glossary.html#term-NASA"><span class="xref std std-term">NASA</span></a> <a class="reference external" href="https://urs.earthdata.nasa.gov/">EarthData</a> is a web-based system that provides global access to
+Earth science data from NASA’s Earth Observing System Data and Information
+System (EOSDIS <a class="footnote-reference brackets" href="#id17" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a>). EOSDIS manages, stores, and distributes a vast array of
+Earth science data gathered from NASA’s Earth Observing satellites and field
+measurement programs. These datasets encompass critical variables like
+atmospheric composition, oceanography, land cover, climate, natural disasters,
+and more.</p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Importance in Open Science</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg aria-hidden="true" class="sd-octicon sd-octicon-chevron-right" height="1.5em" version="1.1" viewbox="0 0 24 24" width="1.5em"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">NASA EarthData embodies the principles of open science by offering free,
+unrestricted access to data that is crucial for understanding our planet.
+In line with the <a class="reference internal" href="../../../_resources/glossary.html#term-FAIR"><span class="xref std std-term">FAIR</span></a> principles <span class="raw-html">—</span> <strong>Findable</strong>,
+<strong>Accessible</strong>, <strong>Interoperable</strong>, and <strong>Reusable</strong> <span class="raw-html">—</span> NASA
+EarthData makes complex scientific information available in a way that
+fosters <a class="reference internal" href="../../../_resources/glossary.html#term-Transparency"><span class="xref std std-term">transparency</span></a>, <a class="reference internal" href="../../../_resources/glossary.html#term-Reproducibility"><span class="xref std std-term">reproducibility</span></a>, and
+<a class="reference internal" href="../../../_resources/glossary.html#term-Collaborative-Research"><span class="xref std std-term">collaborative research</span></a>.</p>
+<ul class="simple">
+<li><p class="sd-card-text"><strong>Promoting Transparency and Reproducibility.</strong> By providing
+unrestricted access to high-quality environmental data, NASA EarthData
+ensures that research findings are reproducible and verifiable.
+Scientists from anywhere in the world can use the same datasets, run
+their own analyses, and compare results, which strengthens the
+credibility of scientific research.</p></li>
+<li><p class="sd-card-text"><strong>Enabling Interdisciplinary Collaboration.</strong> Environmental challenges,
+such as climate change, require input from multiple scientific
+disciplines. NASA EarthData facilitates this by offering diverse
+datasets that can be used across fields like meteorology, ecology,
+sociology, and economics. This fosters a spirit of collaboration and
+cross-pollination of ideas.</p></li>
+<li><p class="sd-card-text"><strong>Supporting Global Efforts to Tackle Environmental Issues.</strong> From
+climate change to disaster management, NASA <a class="reference external" href="https://urs.earthdata.nasa.gov/">EarthData</a> provides
+critical insights that inform global efforts to protect the planet. Open
+access to this data empowers not just scientists but also policymakers,
+educators, and activists working toward environmental sustainability.</p></li>
+</ul>
+</div>
+</details><p>Researchers, scientists, policymakers, and educators worldwide use NASA
+EarthData to address pressing scientific questions and societal challenges. For researchers working with Earth science data, NASA EarthData provides
+access to extensive datasets.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-3" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-3">
+Use cases</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Climate Change Research.</strong> NASA <a class="reference external" href="https://urs.earthdata.nasa.gov/">EarthData</a> provides researchers
+with critical information on global temperature patterns, ice sheet
+dynamics, sea level rise, and carbon dioxide concentrations. Using
+this data, climate scientists can model future scenarios and develop
+strategies to mitigate climate change effects.</p></li>
+<li><p><strong>Natural Disaster Monitoring and Response.</strong> NASA EarthData plays a
+pivotal role in disaster management by offering near-real-time data
+on hurricanes, wildfires <a class="footnote-reference brackets" href="#id18" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a>, earthquakes <a class="footnote-reference brackets" href="#id19" id="id10" role="doc-noteref"><span class="fn-bracket">[</span>5<span class="fn-bracket">]</span></a>, and other natural
+disasters. <a class="footnote-reference brackets" href="#id20" id="id11" role="doc-noteref"><span class="fn-bracket">[</span>6<span class="fn-bracket">]</span></a> This data is crucial for tracking the progression of
+a disaster and coordinating response efforts.</p></li>
+<li><p><strong>Environmental Justice and Health Research.</strong> Researchers and
+policy makers use NASA <a class="reference external" href="https://urs.earthdata.nasa.gov/">EarthData</a> to study the environmental
+factors affecting human health, such as air quality <a class="footnote-reference brackets" href="#id21" id="id12" role="doc-noteref"><span class="fn-bracket">[</span>7<span class="fn-bracket">]</span></a> and water
+contamination. <a class="footnote-reference brackets" href="#id22" id="id13" role="doc-noteref"><span class="fn-bracket">[</span>8<span class="fn-bracket">]</span></a> This data helps identify regions
+disproportionately affected by pollution and guides efforts toward
+achieving environmental justice. <a class="footnote-reference brackets" href="#id23" id="id14" role="doc-noteref"><span class="fn-bracket">[</span>9<span class="fn-bracket">]</span></a></p></li>
+<li><p><strong>Agriculture, Water Resource Management and Food Security.</strong>
+Agricultural scientists use data from NASA EarthData to monitor crop
+health, predict yields, and understand the impacts of drought and
+other climate-related factors. This information is essential for
+ensuring food security in vulnerable regions.</p></li>
+</ul>
+</div>
+<input id="sd-tab-item-4" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-4">
+Why is it so important?</label><div class="sd-tab-content docutils">
+<ul class="simple">
+<li><p><strong>Global Access to Critical Environmental Data.</strong> NASA EarthData
+democratizes access to some of the most comprehensive Earth science
+datasets available. With data spanning decades, it provides a
+historical perspective that can help researchers analyze trends and
+patterns over time. This kind of data is critical for climate
+studies, disaster management, and environmental monitoring.</p></li>
+<li><p><strong>High-Quality and Reliable Data.</strong> All data hosted on NASA
+<a class="reference external" href="https://urs.earthdata.nasa.gov/">EarthData</a> is meticulously curated and validated, making it highly
+reliable for research and analysis. These datasets come from
+state-of-the-art satellite missions and are updated frequently,
+providing researchers with up-to-date information on global
+environmental changes.</p></li>
+<li><p><strong>Supporting Scientific Collaboration.</strong> <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Access"><span class="xref std std-term">Open Access</span></a> to NASA
+EarthData encourages collaboration among scientists across different
+disciplines and geographic locations. For example, a climate
+scientist studying global warming in the Arctic can share insights
+and data with an agricultural researcher investigating crop impacts
+in Asia. This interdisciplinary collaboration fosters a holistic
+understanding of Earth’s interconnected systems.</p></li>
+</ul>
+</div>
+</div>
+<section id="creating-earthdata-account">
+<span id="creating-nasa-earthdata-account"></span><h3>Creating EarthData Account<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#creating-earthdata-account"></a></h3>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://urs.earthdata.nasa.gov/">EarthData</a>.</p></li>
+<li><p>Click on Register. Like ORCID, you’ll see a form asking for some basic
+information. Enter your information like your <strong>username</strong> and <strong>password</strong>.
+Confirm the password once. Instructions about the password requirements
+would be mentioned while entering the password.</p></li>
+<li><p>Next would be the <strong>first</strong> and <strong>last name</strong>, <strong>primary email address</strong>,
+your <strong>Country of Research</strong> and <strong>Affiliations</strong>.</p></li>
+<li><p>Review and accept the EarthData terms of use and privacy policy.</p></li>
+<li><p>Finally, Click the <span class="guilabel"><span class="accelerator">R</span>egister For EarthData Login</span> button to
+complete the form submission.</p></li>
+</ol>
+</section>
+</section>
+<section id="up-next">
+<h2>Up Next<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#up-next"></a></h2>
+<p>Congratulations!</p>
+<p>You’ve now successfully set up some of the most critical
+accounts that will empower your journey in open science. These platforms will
+serve as your foundation, enabling you to share, collaborate, and publish
+research data while adhering to the highest standards of openness and
+accessibility. These accounts were your first steps into the open science
+landscape, and each one is an important piece of the puzzle. Whether you’re
+archiving your research, sharing datasets, or managing your scholarly
+identity, you’re now equipped to participate in a global community dedicated
+to transparency, reproducibility, and collaboration.</p>
+<p>With your foundational accounts established, it’s time to gear up with the
+tools that will make your open science experience efficient and effective. In
+the next section, we’ll explore the essential software and platforms you’ll
+need. This upcoming guide will walk you through the necessary tools, explain
+its significance, and provide detailed instructions on setting them up and
+using them effectively. We’ll also cover best practices to enhance your
+workflow and collaborate with other researchers around the world.</p>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-row-cols-3 sd-row-cols-xs-3 sd-row-cols-sm-3 sd-row-cols-md-3 sd-row-cols-lg-3 docutils">
+<div class="sd-col sd-d-flex-column docutils">
+<div class="sd-card sd-sphinx-override sd-mb-3 sd-shadow-none sd-card-hover docutils">
+<img alt="Tools setup guide" class="sd-card-img" src="../../../_images/tools-technologies.png"/>
+<div class="sd-card-img-overlay docutils">
+<div class="sd-card-body docutils">
+<div class="sd-card-title sd-font-weight-bold docutils">
+Tools to empower your Open Science workflows</div>
+</div>
+<a class="sd-stretched-link sd-hide-link-text reference internal" href="required-tools.html"><span class="doc">Required Tools</span></a></div>
+</div>
+</div>
+</div>
+</div>
+<h2 class="rubric">References</h2>
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id15" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id4" role="doc-backlink">1</a><span class="fn-bracket">]</span></span>
+<p>Learn more about various ways of <a class="reference external" href="https://docs.github.com/en/authentication/securing-your-account-with-two-factor-authentication-2fa/configuring-two-factor-authentication">Configuring two-factor authentication</a>.</p>
+</aside>
+<aside class="footnote brackets" id="id16" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id5" role="doc-backlink">2</a><span class="fn-bracket">]</span></span>
+<p>Learn more about <a class="reference external" href="https://docs.github.com/en/authentication/authenticating-with-a-passkey/managing-your-passkeys#adding-a-passkey-to-your-account">Adding a passkey to your account</a>.</p>
+</aside>
+<aside class="footnote brackets" id="id17" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id8" role="doc-backlink">3</a><span class="fn-bracket">]</span></span>
+<p>Earth Observing System Data Information System (EOSDIS)
+<a class="reference external" href="https://appel.nasa.gov/critical-knowledge/case-studies/appel-case-studies/eosdis-html/">case studies</a>.</p>
+</aside>
+<aside class="footnote brackets" id="id18" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id9" role="doc-backlink">4</a><span class="fn-bracket">]</span></span>
+<p>NASA’s <a class="reference external" href="https://www.earthdata.nasa.gov/topics/human-dimensions/wildfires">wildfire data</a> enable users to monitor conditions before a
+fire starts, track them once they do, and assess their effects after a
+burn.</p>
+</aside>
+<aside class="footnote brackets" id="id19" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id10" role="doc-backlink">5</a><span class="fn-bracket">]</span></span>
+<p>NASA’s <a class="reference external" href="https://www.earthdata.nasa.gov/topics/solid-earth/earthquakes">earthquake data</a> help researchers understand the land surface
+deformation, health risks, and economic impacts caused by these
+disasters.</p>
+</aside>
+<aside class="footnote brackets" id="id20" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id11" role="doc-backlink">6</a><span class="fn-bracket">]</span></span>
+<p>Natural Hazards, a topic on the NASA EarthData <a class="reference external" href="https://www.earthdata.nasa.gov/topics/human-dimensions/natural-hazards">forum</a>.</p>
+</aside>
+<aside class="footnote brackets" id="id21" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id12" role="doc-backlink">7</a><span class="fn-bracket">]</span></span>
+<p>NASA’s <a class="reference external" href="https://www.earthdata.nasa.gov/topics/atmosphere/air-quality">air quality data</a> allow users to measure pollutants in the
+atmosphere and track their health and socioeconomic impact on people.</p>
+</aside>
+<aside class="footnote brackets" id="id22" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id13" role="doc-backlink">8</a><span class="fn-bracket">]</span></span>
+<p>Diseases caused by consuming water that contains harmful
+microorganisms, biotoxins, or toxic contaminants. Examples include
+cholera, schistosomiasis, and other gastrointestinal problems.
+<a class="reference external" href="https://www.earthdata.nasa.gov/topics/human-dimensions/waterborne-diseases">Waterborne diseases</a> are often the result of unsafe
+sanitation practices or a breakdown in infrastructure that can be a
+result of or exacerbated by various natural hazards, such as flood or
+drought.</p>
+</aside>
+<aside class="footnote brackets" id="id23" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a href="#id14" role="doc-backlink">9</a><span class="fn-bracket">]</span></span>
+<p>NASA’s <a class="reference external" href="https://www.earthdata.nasa.gov/topics/human-dimensions/environmental-justice">Earth-observing and socioeconomic data</a> offers
+researchers the ability to identify environmental issues
+disproportionally harming communities.</p>
+</aside>
+</aside>
+</section>
+</section>
+</div>
+<div class="previous-next">
+<div id="previous-button">
+<a href="open-science-101.html">
+<span><i class="fa fa-chevron-left" style="font-size: 1.5rem;"></i></span>
+</a>
+</div>
+<div id="next-button">
+<a href="required-tools.html">
+<span><i class="fa fa-chevron-right" style="font-size: 1.5rem;"></i></span>
+</a>
+</div>
+</div>
+</div></main>
+<aside id="right-sidebar">
+<div class="mini-sidebar-wrapper"><p>On this page</p>
+<ul>
+<li><a class="reference internal" href="#">Accounts Setup</a><ul>
+<li><a class="reference internal" href="#github">GitHub</a><ul>
+<li><a class="reference internal" href="#creating-github-account">Creating GitHub Account</a></li>
+<li><a class="reference internal" href="#securing-your-github-account">Securing Your GitHub Account</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#orcid">ORCID</a><ul>
+<li><a class="reference internal" href="#creating-orcid-account">Creating ORCID Account</a></li>
+<li><a class="reference internal" href="#make-the-most-of-your-orcid-account">Make the Most of Your ORCID Account</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#zenodo">Zenodo</a><ul>
+<li><a class="reference internal" href="#creating-zenodo-account">Creating Zenodo Account</a></li>
+<li><a class="reference internal" href="#integrating-with-github-and-orcid">Integrating with GitHub and ORCID</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#nasa-earthdata">NASA EarthData</a><ul>
+<li><a class="reference internal" href="#creating-earthdata-account">Creating EarthData Account</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#up-next">Up Next</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<footer>
+<div class="footer-element">
+<div class="extra-footer-elements">
+<div>
+                To submit feedback on documentation, visit <a href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX/discussions/new?category=thoughts-and-feedbacks">Feedback</a>.
+            </div>
+<div>Copyright © 2025, TOPSTSCHOOL Development Team.</div>
+<div>Built using <a href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 8.1.3</a>
+                and <a href="https://github.com/xames3/coeus-sphinx-theme" rel="noreferrer">Coeus Sphinx Theme</a>. Last updated: June 27, 2025</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../../_static/documentation_options.js?v=5929fcd5"></script><script src="../../../_static/doctools.js?v=9bcbadda"></script><script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script><script src="../../../_static/clipboard.min.js?v=a7894cd8"></script><script src="../../../_static/copybutton.js?v=f281be69"></script><script defer="defer" src="../../../_static/main.js?v=4c2e7a9f"></script><script defer="defer" src="../../../_static/coeus.js?v=8a3d4ffe"></script><script src="../../../_static/design-tabs.js?v=f930bc37"></script><script src="../../../_static/bootstrap-carousel.min.js?v=9a6c5d3e"></script>
+
+</body>
+</html>

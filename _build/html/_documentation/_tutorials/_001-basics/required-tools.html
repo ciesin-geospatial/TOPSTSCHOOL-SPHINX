@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+
+<html data-content_root="../../../" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="Tools and Technologies" property="og:title"/>
+<meta content="website" property="og:type"/>
+<meta content="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/_documentation/_tutorials/_001-basics/required-tools.html" property="og:url"/>
+<meta content="TOPSTSCHOOL" property="og:site_name"/>
+<meta content="An overview of the tools necessary to contribute effectively
+to the open science workflows." property="og:description"/>
+<meta content="getting-started open-science-101 In the world of Open Science, collaboration and innovation go hand-in-hand. Scientists, researchers, and contributors from across the globe come together to share d..." name="description"/>
+<title>Required Tools</title>
+<meta content="Required Tools" property="og:title"/>
+<meta content="Required Tools" name="twitter:title"/>
+<script crossorigin="anonymous" src="https://kit.fontawesome.com/8bcdaaff4d.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<link href="../../../_static/pygments.css?v=8e8a900e" rel="stylesheet" type="text/css">
+<link href="../../../_static/coeus.css?v=7e4c1ec4" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/copybutton.css?v=76b2166b" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/styles.css?v=28f40da2" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/sphinx-design.min.css?v=95c83b7e" rel="stylesheet" type="text/css"/>
+<link href="../../../_static/coeus.css?v=7e4c1ec4" rel="stylesheet" type="text/css"/>
+<link href="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/_documentation/_tutorials/_001-basics/required-tools.html" rel="canonical"/>
+<link href="../../../_static/favicon.png" rel="icon"/>
+<link href="../../../search.html" rel="search" title="Search"/>
+</link></head>
+<body :class="{ 'overflow-hidden': showSidebar }" class="antialiased" x-data="{ showSidebar: false }">
+<div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden" x-cloak="x-cloak" x-show="showSidebar"></div>
+<div id="page">
+<header class="header-pill glass-bevel">
+<a class="header-logo" href="../../../index.html">
+<img alt="Logo" height="36" src="../../../_static/logo.png" style="margin-right: 0.5rem;" width="36"/><span class="header-title">TOPSTSCHOOL</span>
+</a><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
+<svg aria-hidden="true" fill="currentColor" height="36" viewbox="0 96 960 960" width="36" xmlns="http://www.w3.org/2000/svg">
+<path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
+</svg>
+<span class="sr-only">Toggle navigation menu</span>
+</button>
+<div class="header-content"><nav>
+<a href="../../../_navbar/about-us.html">About</a>
+<a href="../../../_navbar/getting-involved.html">Get Involved</a>
+<a href="../../../_navbar/meet-the-team.html">School Yearbook</a>
+</nav>
+<div class="header-search">
+<div x-data="{ isOpen: false }">
+<button @click="isOpen = !isOpen; $nextTick(() =&gt; $refs.search.focus())" aria-label="Toggle search">
+<i class="fa-solid fa-magnifying-glass"></i>
+</button>
+<form @click.outside="isOpen = false" action="../../../search.html" class="searchbox" id="searchbox" method="get" x-show="isOpen" x-transition="">
+<input aria-label="Search the docs" class="glass-bevel" id="search-input" name="q" placeholder="Search documentation" type="search" x-ref="search"/>
+</form>
+</div>
+</div></div>
+</header>
+<div class="universal-wrapper">
+<div "="" class="hero-wrapper" style="background-image:linear-gradient(to left, #fdde5c,
+                #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3);">
+<div class="hero-content"></div>
+</div>
+<div class="outer-content-wrapper">
+<aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" id="left-sidebar">
+<div class="sidebar-wrapper">
+<nav class="flex md:hidden flex-col font-medium mt-4">
+<a href="../../../_navbar/about-us.html">About</a>
+<a href="../../../_navbar/getting-involved.html">Get Involved</a>
+<a href="../../../_navbar/meet-the-team.html">School Yearbook</a>
+</nav>
+
+<p class="caption" role="heading"><span class="caption-text">**Modules**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_water/index.html">Water</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_air-quality/index.html">Air Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_disaster/index.html">Disaster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../_modules/_climate/index.html">Climate</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Tutorials &amp; Guides**</span></p>
+<ul class="current">
+<li class="toctree-l1 current" x-data="{ expanded: $el.classList.contains('current') }"><a :class="{ 'expanded': expanded }" @click="expanded = !expanded" class="reference internal expandable" href="open-science-101.html">Open Science 101<button @click.prevent.stop="expanded = !expanded" type="button"><i class="fa-solid fa-circle-plus"></i></button></a><ul class="current" x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="accounts-setup.html">Accounts Setup</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Required Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1" x-data="{ expanded: $el.classList.contains('current') }"><a :class="{ 'expanded': expanded }" @click="expanded = !expanded" class="reference internal expandable" href="../_002-contributing/contributing-to-school.html">Contributing to SCHOOL<button @click.prevent.stop="expanded = !expanded" type="button"><i class="fa-solid fa-circle-plus"></i></button></a><ul x-show="expanded">
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/repository-overview.html">Repository Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/using-sphinx.html">Using Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/making-first-change.html">Making First Change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../_002-contributing/initial-commit.html">Initial Commit</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Resources**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../_resources/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../_resources/feedback.html">Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../_navbar/getting-involved.html">How to Get Involved</a></li>
+</ul>
+</div>
+</aside>
+<main class="inner-content-wrapper">
+<span class="fa-solid fa-gear-code hero-icon"></span>
+<div class="inner-content-wrapper">
+<nav aria-label="breadcrumbs" class="breadcrumbs space-x-1">
+<a class="breadcrumbs-passive" href="../../../index.html">
+<span class="hidden md:inline">TOPSTSCHOOL</span>
+<svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
+</svg>
+</a><a class="breadcrumbs-passive" href="open-science-101.html">Open Science 101</a>
+<div style="margin-right: .25rem;">/</div><span aria-current="page" class="breadcrumbs-active" style="margin-left: 0rem">Required Tools</span>
+</nav>
+<div class="page-content" id="content" role="main"><section id="required-tools">
+<span id="id1"></span><h1>Required Tools<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#required-tools"></a></h1>
+
+<div class="hero-summary">
+<p>Equip yourself with the essential tools required for efficient coding,
+data analysis, and collaboration in Open Science.</p>
+</div>
+<p class="tags"><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/getting-started.html"><span class="doc">getting-started</span></a><span> </span><a class="sd-sphinx-override sd-badge sd-bg-primary sd-bg-text-primary reference internal" href="../../../_tags/open-science-101.html"><span class="doc">open-science-101</span></a></p>
+
+<div class="contributors-wrapper">
+<p class="contributors-timestamp">Updated Today</p>
+<div class="contributors-publisher">
+<span>Published by <a aria-label="Ask TOPSTSCHOOL Development Team via email" class="contributor-name" data-index="0" href="mailto:TOPSTSCHOOL@gmail.com?subject=[TOPSTSCHOOL] Required Tools">TOPSTSCHOOL Development Team</a></span>
+<div class="project-socials">
+<a aria-label="Share this article via Youtube (opens a new tab)" class="fa-brands fa-youtube" href="https://www.youtube.com/@TOPSTSCHOOL" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Check out source on GitHub" class="fa-brands fa-github" href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX" rel="noopener noreferrer" target="_blank"></a>
+<a aria-label="Ask team via email" class="fa-solid fa-envelope" href="mailto:TOPSTSCHOOL@gmail.com?subject=[TOPSTSCHOOL] Required Tools" style="font-weight: 900;"></a>
+</div>
+</div>
+<div class="contributors-article-metadata">
+<p class="contributors-metadata-badge" id="readingTime"></p>
+<p class="contributors-metadata-badge">
+<i class="fa-solid fa-map-pin" style="padding-right: 0.3rem;"></i>Palisades, NY
+        </p>
+<div class="language-switcher">
+<p class="contributors-metadata-badge">
+<i class="fa-solid fa-language" style="padding-right: 0.3rem;"></i>
+<select class="no-chevron-select" id="language-selector" onchange="switchLanguage()">
+<option value="en">
+                        English
+                    </option>
+</select>
+</p>
+</div>
+</div>
+<div class="contributors-publisher-modal" id="contributors-publisher-modal-0">
+<div style="display: flex; gap: 0.25rem;">
+<img alt="TOPSTSCHOOL Development Team's photo" src="https://avatars.githubusercontent.com/u/16084170?s=200&amp;v=4"/>
+<div class="contributor-identity">
+<p>TOPSTSCHOOL Development Team</p>
+<p style="font-weight: 400; font-size: 0.85rem; color: gray; margin-top: -0.25rem; margin-bottom: 0.25rem;">Open Science Contributor</p>
+<div class="contributor-reachout-details">
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="mailto:TOPSTSCHOOL@gmail.com"><i class="fa-solid fa-envelope" style="padding-right: 0.3rem;"></i>Email</a></p>
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="https://github.com/ciesin-geospatial" target="_blank"><i class="fa-brands fa-github" style="padding-right: 0.3rem;"></i>GitHub</a></p>
+<p class="contributors-metadata-badge" style="margin-right: 0.25rem;"><a href="https://www.youtube.com/@TOPSTSCHOOL" target="_blank"><i class="fa-brands fa-youtube" style="padding-right: 0.3rem;"></i>YouTube</a></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>In the world of <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a>, collaboration and innovation go
+hand-in-hand. Scientists, researchers, and contributors from across the globe
+come together to share data, insights, and breakthroughs. However, this
+collaboration requires more than just ideas <span class="raw-html">—</span> it requires the right
+set of tools. These tools serve as the backbone for everything from coding and
+data analysis to version control and publishing. Without them, the journey
+from concept to contribution would be slow, error-prone, and often
+overwhelming. In this context, tools refer to a collection of software
+programs, platforms, and environments that allow you to efficiently work with
+code, manage versions, handle data, and even collaborate in real time. Each
+tool plays a specific role in the research and development process, addressing
+different challenges:</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-0" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-0">
+VCS</label><div class="sd-tab-content docutils">
+<p><a class="reference internal" href="../../../_resources/glossary.html#term-Version-Control-System"><span class="xref std std-term">Version Control System</span></a> like Git and SVN allow you to track
+changes in code, ensuring you never lose work and can collaborate
+seamlessly with others.</p>
+</div>
+<input id="sd-tab-item-1" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-1">
+IDE</label><div class="sd-tab-content docutils">
+<p><a class="reference internal" href="../../../_resources/glossary.html#term-Integrated-Development-Environment-IDE"><span class="xref std std-term">Integrated Development Environment (IDE)</span></a> like Visual Studio
+Code provide a space to write, debug, and test code with features that
+make your workflow faster and more intuitive.</p>
+</div>
+<input id="sd-tab-item-2" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-2">
+Data processing tools</label><div class="sd-tab-content docutils">
+<p><a class="reference internal" href="../../../_resources/glossary.html#term-Data-Processing-Tools"><span class="xref std std-term">Data processing tools</span></a> like Jupyter Notebook facilitate
+interactive data analysis, letting you run code in chunks, visualize
+outputs, and document results in one place.</p>
+</div>
+<input id="sd-tab-item-3" name="sd-tab-set-0" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-3">
+Package managers</label><div class="sd-tab-content docutils">
+<p><a class="reference internal" href="../../../_resources/glossary.html#term-Package-Managers"><span class="xref std std-term">Package managers</span></a> like Conda help you manage software libraries
+and environments, ensuring that you’re working with the right versions
+of the tools for your project.</p>
+</div>
+</div>
+<p>These tools are more than just software <span class="raw-html">—</span> they are the enablers
+of <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a>. They streamline workflows, reduce friction, and
+help build a shared language across diverse disciplines. By mastering
+these tools, you become empowered to focus more on your research and less
+on the technical overhead. They allow you to engage in the spirit of Open
+Science <span class="raw-html">—</span> transparently, collaboratively, and efficiently.</p>
+<section id="git">
+<span id="about-git"></span><h2>Git<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#git"></a></h2>
+<p>Git is a powerful, distributed <a class="reference internal" href="../../../_resources/glossary.html#term-Version-Control-System"><span class="xref std std-term">version control system</span></a> that enables you
+to track changes in your code and data over time. Git is not just a tool but
+an essential framework that supports open science through efficient, organized
+collaboration on data, code, and research. Like mentioned earlier, Git is a
+distributed version control system, meaning it allows multiple contributors to
+work on a project simultaneously and independently, while maintaining an
+organized record of changes.</p>
+<img alt="Git banner" src="../../../_images/git-banner.png">
+<section id="understanding-git">
+<span id="id2"></span><h3>Understanding Git<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#understanding-git"></a></h3>
+<ul class="simple">
+<li><p><strong>Collaborating on Code for Data Analysis.</strong> Imagine a team of researchers
+working on a data analysis project. Each researcher can create their own
+branch to experiment with different data cleaning methods, machine learning
+models, or visualizations. They can commit their changes, track progress,
+and merge successful ideas into the main branch. This structure encourages
+collaborative testing while ensuring stability.</p></li>
+<li><p><strong>Version Control for Data and Documentation.</strong> Git can be used to version
+not only code but also datasets, notebooks, and documentation. If
+researchers make updates to data preprocessing methods, for example, they
+can use Git to track those changes and ensure that documentation remains
+aligned with the current state of the data.</p></li>
+<li><p><strong>Publishing Open Access Research.</strong> By pushing project repositories to
+platforms like <a class="reference internal" href="accounts-setup.html#about-github"><span class="std std-ref">GitHub</span></a> or GitLab, researchers can easily share
+their work with the global community. GitHub repositories can even be linked
+to <a class="reference internal" href="accounts-setup.html#about-zenodo"><span class="std std-ref">Zenodo</span></a>, allowing for citable versions of the project,
+complete with DOI generation. This setup is ideal for open science, where
+making research outputs available and citable is critical.</p></li>
+</ul>
+</section>
+<section id="three-core-concepts">
+<h3>Three core concepts<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#three-core-concepts"></a></h3>
+<ul class="simple">
+<li><p><strong>Repositories.</strong> A repository (repo) is essentially a project folder where
+Git tracks changes. Repositories can be local (on your machine) or remote
+(hosted on platforms like GitHub or GitLab). <a class="reference internal" href="../../../_resources/glossary.html#term-Open-Science"><span class="xref std std-term">Open Science</span></a> projects
+often have both local and remote repositories.</p></li>
+<li><p><strong>Branches.</strong> A branch is an independent line of development within a
+repository. By default, Git creates a main branch, but contributors can
+create additional branches to work on new features or experiments without
+disturbing the main codebase. Branches are essential in open science
+projects as they allow for experimentation and modularity. For example,
+researchers can create a branch to test a new data analysis method, and only
+merge it into the main branch if the method proves effective.</p></li>
+<li><p><strong>Commits.</strong> A commit is a snapshot of changes in the project. Each commit
+records <span class="raw-html">—</span> what changes were made, who made the changes, when they
+were made and a message describing why the changes were made. Commit
+messages should be clear and descriptive, as they serve as a record for
+others who may need to reproduce or build upon your work.</p></li>
+</ul>
+</section>
+<section id="installing-git">
+<span id="id3"></span><h3>Installing Git<a @click.prevent="window.navigator.clipboard.writeText($el.href); $el.setAttribute('data-tooltip', 'Copied!'); setTimeout(() =&gt; $el.setAttribute('data-tooltip', 'Copy link'), 2000)" aria-label="Copy link to this element" class="headerlink" data-tooltip="Copy link" href="#installing-git"></a></h3>
+<ol class="arabic">
+<li><p>Go to <a class="reference external" href="https://git-scm.com/downloads">git-scm.com</a> and download the
+latest version for your operating system.</p></li>
+<li><p>Run the installer.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-4" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" data-sync-group="operating-system" data-sync-id="windows" for="sd-tab-item-4">
+Windows</label><div class="sd-tab-content docutils">
+<p>Double-click the downloaded <code class="docutils literal notranslate"><span class="pre">.exe</span></code> file and follow the on-screen
+instructions. Accept the default settings unless you have a specific
+reason to modify them..</p>
+</div>
+<input id="sd-tab-item-5" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" data-sync-group="operating-system" data-sync-id="macos" for="sd-tab-item-5">
+macOS</label><div class="sd-tab-content docutils">
+<p>Open the <code class="docutils literal notranslate"><span class="pre">.dmg</span></code> file, drag the Git application into your
+<code class="docutils literal notranslate"><span class="pre">Applications</span></code> folder, and follow any remaining instructions.</p>
+</div>
+<input id="sd-tab-item-6" name="sd-tab-set-1" type="radio"/>
+<label class="sd-tab-label" data-sync-group="operating-system" data-sync-id="linux" for="sd-tab-item-6">
+Linux</label><div class="sd-tab-content docutils">
+<p>Open your terminal and use the following command based on your Linux
+distribution.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="sd-tab-item-7" name="sd-tab-set-2" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-7">
+Ubuntu/Debian</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-8" name="sd-tab-set-2" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-8">
+Fedora/RHEL</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>dnf<span class="w"> </span>install<span class="w"> </span>git
+</pre></div>
+</div>
+</div>
+<input id="sd-tab-item-9" name="sd-tab-set-2" type="radio"/>
+<label class="sd-tab-label" for="sd-tab-item-9">
+Arch Linux</label><div class="sd-tab-content docutils">
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>sudo<span class="w"> </span>pacman<span class="w"> </span>-S<span class="w"> </span>git
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</li>
+<li><p>Verify the installation by opening a terminal or command prompt and type the
+following command:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>git<span class="w"> </span>--version
+</pre></div>
+</div>
+</li>
+</ol>
+<p>With Git installed, you’ll be able to synchronize your local work with a
+remote repository on <a class="reference internal" href="accounts-setup.html#about-github"><span class="std std-ref">GitHub</span></a> (or another Git-based platform) and
+start collaborating on open science projects.</p>
+</section>
+</img></section>
+</section>
+</div>
+<div class="previous-next">
+<div id="previous-button">
+<a href="accounts-setup.html">
+<span><i class="fa fa-chevron-left" style="font-size: 1.5rem;"></i></span>
+</a>
+</div>
+<div id="next-button">
+<a href="../_002-contributing/contributing-to-school.html">
+<span><i class="fa fa-chevron-right" style="font-size: 1.5rem;"></i></span>
+</a>
+</div>
+</div>
+</div></main>
+<aside id="right-sidebar">
+<div class="mini-sidebar-wrapper"><p>On this page</p>
+<ul>
+<li><a class="reference internal" href="#">Required Tools</a><ul>
+<li><a class="reference internal" href="#git">Git</a><ul>
+<li><a class="reference internal" href="#understanding-git">Understanding Git</a></li>
+<li><a class="reference internal" href="#three-core-concepts">Three core concepts</a></li>
+<li><a class="reference internal" href="#installing-git">Installing Git</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</aside>
+</div>
+</div>
+<footer>
+<div class="footer-element">
+<div class="extra-footer-elements">
+<div>
+                To submit feedback on documentation, visit <a href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX/discussions/new?category=thoughts-and-feedbacks">Feedback</a>.
+            </div>
+<div>Copyright © 2025, TOPSTSCHOOL Development Team.</div>
+<div>Built using <a href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 8.1.3</a>
+                and <a href="https://github.com/xames3/coeus-sphinx-theme" rel="noreferrer">Coeus Sphinx Theme</a>. Last updated: June 27, 2025</div>
+</div>
+</div>
+</footer>
+</div>
+<script src="../../../_static/documentation_options.js?v=5929fcd5"></script><script src="../../../_static/doctools.js?v=9bcbadda"></script><script src="../../../_static/sphinx_highlight.js?v=dc90522c"></script><script src="../../../_static/clipboard.min.js?v=a7894cd8"></script><script src="../../../_static/copybutton.js?v=f281be69"></script><script defer="defer" src="../../../_static/main.js?v=4c2e7a9f"></script><script defer="defer" src="../../../_static/coeus.js?v=8a3d4ffe"></script><script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+
+</body>
+</html>

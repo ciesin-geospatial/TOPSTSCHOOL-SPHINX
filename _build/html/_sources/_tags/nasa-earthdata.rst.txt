@@ -1,0 +1,15 @@
+.. _sphx_tag_nasa-earthdata:
+
+===============================================================================
+Tagged Pages
+===============================================================================
+
+.. title-hero::
+    :icon: fa-solid fa-tags
+    :summary: All pages with selected tags.
+
+.. toctree::
+    :maxdepth: 1
+    :caption: NASA-EARTHDATA
+
+    ../_documentation/_tutorials/_001-basics/accounts-setup.rst

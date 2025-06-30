@@ -1,0 +1,15 @@
+.. _sphx_tag_air-quality:
+
+===============================================================================
+Tagged Pages
+===============================================================================
+
+.. title-hero::
+    :icon: fa-solid fa-tags
+    :summary: All pages with selected tags.
+
+.. toctree::
+    :maxdepth: 1
+    :caption: AIR-QUALITY
+
+    ../_documentation/_modules/_air-quality/index.rst

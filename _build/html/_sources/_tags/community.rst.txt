@@ -1,0 +1,17 @@
+.. _sphx_tag_community:
+
+===============================================================================
+Tagged Pages
+===============================================================================
+
+.. title-hero::
+    :icon: fa-solid fa-tags
+    :summary: All pages with selected tags.
+
+.. toctree::
+    :maxdepth: 1
+    :caption: COMMUNITY
+
+    ../_documentation/_modules/_community/index.rst
+    ../_navbar/getting-involved.rst
+    ../_navbar/meet-the-team.rst

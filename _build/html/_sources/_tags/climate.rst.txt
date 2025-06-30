@@ -1,0 +1,15 @@
+.. _sphx_tag_climate:
+
+===============================================================================
+Tagged Pages
+===============================================================================
+
+.. title-hero::
+    :icon: fa-solid fa-tags
+    :summary: All pages with selected tags.
+
+.. toctree::
+    :maxdepth: 1
+    :caption: CLIMATE
+
+    ../_documentation/_modules/_climate/index.rst

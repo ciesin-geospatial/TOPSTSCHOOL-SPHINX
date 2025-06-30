@@ -1,0 +1,386 @@
+<!--
+Coeus Sphinx Theme Main Layout Template
+=======================================
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Tuesday, October 29 2024
+Last updated on: Thursday, October 30 2024
+--><!DOCTYPE html>
+<html lang="en"  data-content_root="./" >
+
+<head>
+    <meta charset="utf-8" />
+    
+    <title>Index</title>
+    <meta property="og:title" content="Index" />
+    <meta name="twitter:title" content="Index" />
+    <script src="https://kit.fontawesome.com/8bcdaaff4d.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=8e8a900e" />
+    <link rel="stylesheet" type="text/css" href="_static/coeus.css?v=7e4c1ec4" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/styles.css?v=28f40da2" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/coeus.css?v=7e4c1ec4" />
+    <link rel="canonical" href="https://ciesin-geospatial.github.io/TOPSTSCHOOL-SPHINX/genindex.html" />
+    <link rel="icon" href="_static/favicon.png" />
+    <link rel="search" title="Search" href="search.html" />
+</head>
+
+<body x-data="{ showSidebar: false }" class="antialiased" :class="{ 'overflow-hidden': showSidebar }">
+    <div x-cloak="x-cloak" x-show="showSidebar"
+        class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm md:hidden"
+        @click.self="showSidebar = false"></div>
+    <div id="page"><!--
+Coeus Sphinx Theme Main Navigation Bar Template
+===============================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Sunday, October 06 2024
+Last updated on: Saturday, December 07 2024
+-->
+<header class="header-pill glass-bevel">
+    <a href="index.html" class="header-logo">
+        <img height="36" width="36" style="margin-right: 0.5rem;" src="_static/logo.png" alt="Logo" /><span class="header-title">TOPSTSCHOOL</span>
+    </a><button
+        class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden"
+        type="button" @click="showSidebar = true">
+        <svg xmlns="http://www.w3.org/2000/svg" height="36" width="36" viewbox="0 96 960 960" aria-hidden="true"
+            fill="currentColor">
+            <path
+                d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z" />
+        </svg>
+        <span class="sr-only">Toggle navigation menu</span>
+    </button>
+    <div class="header-content"><nav>
+            <a href="_navbar/about-us.html">About</a>
+            <a href="_navbar/getting-involved.html">Get Involved</a>
+            <a href="_navbar/meet-the-team.html">School Yearbook</a>
+        </nav>
+            <div class="header-search"><!--
+Coeus Sphinx Theme Search Box Template
+======================================
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Monday, August 26 2024
+Last updated on: Wednesday, October 30 2024
+-->
+<div x-data="{ isOpen: false }">
+    <button @click="isOpen = !isOpen; $nextTick(() => $refs.search.focus())" aria-label="Toggle search">
+        <i class="fa-solid fa-magnifying-glass"></i>
+    </button>
+    <form x-show="isOpen" x-transition @click.outside="isOpen = false" id="searchbox" action="search.html"
+        method="get" class="searchbox">
+        <input x-ref="search" name="q" id="search-input" type="search" aria-label="Search the docs"
+            placeholder="Search documentation" class="glass-bevel" />
+    </form>
+</div>
+            </div></div>
+</header>
+        
+        <div class="universal-wrapper">
+            <div class="hero-wrapper" style="background-image:linear-gradient(to left, #fdde5c,
+                #f8ab5e, #f56a62, #a176c8, #759beb, #65beb3);"">
+                <div class=" hero-content"></div>
+        </div>
+        <div class="outer-content-wrapper"><!--
+Coeus Sphinx Theme Sidebar Template
+===================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Monday, August 26 2024
+Last updated on: Tuesday, October 29 2024
+-->
+<aside id="left-sidebar" :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }">
+    <div class="sidebar-wrapper"><!--
+Coeus Sphinx Theme Navigation Bar Template
+==========================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Monday, August 26 2024
+Last updated on: Saturday, December 07 2024
+-->
+<nav class="flex md:hidden flex-col font-medium mt-4">
+                    <a href="_navbar/about-us.html">About</a>
+                    <a href="_navbar/getting-involved.html">Get Involved</a>
+                    <a href="_navbar/meet-the-team.html">School Yearbook</a>
+        </nav>
+<!--
+Coeus Sphinx Theme Sidebar ToC Template
+=======================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Sunday, August 25 2024
+Last updated on: Tuesday, October 29 2024
+-->
+
+<p class="caption" role="heading"><span class="caption-text">**Modules**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_water/index.html">Water</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_air-quality/index.html">Air Quality</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_disaster/index.html">Disaster</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_climate/index.html">Climate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_modules/_community/index.html">Community</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Tutorials &amp; Guides**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_tutorials/_001-basics/open-science-101.html">Open Science 101</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_001-basics/accounts-setup.html">Accounts Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_001-basics/required-tools.html">Required Tools</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/contributing-to-school.html">Contributing to SCHOOL</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/repository-overview.html">Repository Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/using-sphinx.html">Using Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/making-first-change.html">Making First Change</a></li>
+<li class="toctree-l2"><a class="reference internal" href="_documentation/_tutorials/_002-contributing/initial-commit.html">Initial Commit</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">**Resources**</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="_resources/glossary.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_resources/feedback.html">Feedback</a></li>
+<li class="toctree-l1"><a class="reference internal" href="_navbar/getting-involved.html">How to Get Involved</a></li>
+</ul>
+
+
+    </div>
+</aside>
+
+            <main class="inner-content-wrapper">
+                
+
+<h1 id="index">Index</h1>
+
+<div class="genindex-jumpbox">
+ <a href="#A"><strong>A</strong></a>
+ | <a href="#C"><strong>C</strong></a>
+ | <a href="#D"><strong>D</strong></a>
+ | <a href="#E"><strong>E</strong></a>
+ | <a href="#F"><strong>F</strong></a>
+ | <a href="#G"><strong>G</strong></a>
+ | <a href="#I"><strong>I</strong></a>
+ | <a href="#L"><strong>L</strong></a>
+ | <a href="#M"><strong>M</strong></a>
+ | <a href="#N"><strong>N</strong></a>
+ | <a href="#O"><strong>O</strong></a>
+ | <a href="#P"><strong>P</strong></a>
+ | <a href="#R"><strong>R</strong></a>
+ | <a href="#S"><strong>S</strong></a>
+ | <a href="#T"><strong>T</strong></a>
+ | <a href="#V"><strong>V</strong></a>
+ 
+</div>
+<h2 id="A">A</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Altmetrics"><strong>Altmetrics</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="C">C</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Citizen-Science"><strong>Citizen Science</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Collaborative-Research"><strong>Collaborative Research</strong></a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Community-Driven-Research"><strong>Community-Driven Research</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Creative-Commons-CC"><strong>Creative Commons (CC)</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="D">D</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Data-Management-Plan-DMP"><strong>Data Management Plan (DMP)</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Data-Processing-Tools"><strong>Data Processing Tools</strong></a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Data-Repository"><strong>Data Repository</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Data-Sharing"><strong>Data Sharing</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="E">E</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Ethos-of-Open-Science"><strong>Ethos of Open Science</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="F">F</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-FAIR"><strong>FAIR</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="G">G</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-GitHub"><strong>GitHub</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="I">I</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Impact-Factor"><strong>Impact Factor</strong></a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Integrated-Development-Environment-IDE"><strong>Integrated Development Environment (IDE)</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="L">L</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Licensing"><strong>Licensing</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="M">M</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Metadata"><strong>Metadata</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="N">N</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-NASA"><strong>NASA</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="O">O</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Open-Access"><strong>Open Access</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Open-Data"><strong>Open Data</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Open-Educational-Resources-OER"><strong>Open Educational Resources (OER)</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Open-Innovation"><strong>Open Innovation</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Open-Methodologies"><strong>Open Methodologies</strong></a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Open-Notebook-Science"><strong>Open Notebook Science</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Open-Peer-Review"><strong>Open Peer Review</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Open-Research"><strong>Open Research</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Open-Science"><strong>Open Science</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-ORCID"><strong>ORCID</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="P">P</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Package-Managers"><strong>Package Managers</strong></a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Preprint"><strong>Preprint</strong></a>
+</li>
+      <li><a href="_resources/glossary.html#term-Public-Access"><strong>Public Access</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="R">R</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Reproducibility"><strong>Reproducibility</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="S">S</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-SCHOOL"><strong>SCHOOL</strong></a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Scientific-Workflow"><strong>Scientific Workflow</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="T">T</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-TOPS"><strong>TOPS</strong></a>
+</li>
+  </ul></td>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Transparency"><strong>Transparency</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+<h2 id="V">V</h2>
+<table style="width: 100%" class="indextable genindextable"><tr>
+  <td style="width: 33%; vertical-align: top;"><ul>
+      <li><a href="_resources/glossary.html#term-Version-Control-System"><strong>Version Control System</strong></a>
+</li>
+  </ul></td>
+</tr></table>
+
+
+
+            </main>
+        </div>
+    </div><!--
+Coeus Sphinx Theme Footer Template
+==================================
+
+Author: Akshay Mestry <xa@mes3.dev>
+Created on: Thursday, August 29 2024
+Last updated on: Tuesday, October 29 2024
+-->
+<footer>
+    <div class="footer-element">
+        <div class="extra-footer-elements">
+            <div>
+                To submit feedback on documentation, visit <a href="https://github.com/ciesin-geospatial/TOPSTSCHOOL-SPHINX/discussions/new?category=thoughts-and-feedbacks">Feedback</a>.
+            </div>
+            <div>Copyright © 2025, TOPSTSCHOOL Development Team.</div>
+            <div>Built using <a href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 8.1.3</a>
+                and <a href="https://github.com/xames3/coeus-sphinx-theme" rel="noreferrer">Coeus Sphinx Theme</a>. Last updated: June 27, 2025</div>
+        </div>
+    </div>
+</footer>
+    </div>
+    <script src="_static/documentation_options.js?v=5929fcd5"></script><script src="_static/doctools.js?v=9bcbadda"></script><script src="_static/sphinx_highlight.js?v=dc90522c"></script><script src="_static/clipboard.min.js?v=a7894cd8"></script><script src="_static/copybutton.js?v=f281be69"></script><script defer="defer" src="_static/main.js?v=4c2e7a9f"></script><script defer="defer" src="_static/coeus.js?v=8a3d4ffe"></script><script src="_static/design-tabs.js?v=f930bc37"></script>
+    
+    </div>
+</body>
+
+</html>
