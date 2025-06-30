@@ -28,7 +28,6 @@ SCHOOL Modules
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
 
 .. _m1:
-===============================================================================
 
 Module 1: Water
 *******************************************************************************
@@ -39,7 +38,6 @@ The Water module explores data on historial water return periods, satellite data
 
 
 .. _m2:
-===============================================================================
 
 Module 2: Air Quality
 *******************************************************************************
@@ -49,7 +47,6 @@ The Air Quality module explores air quality data at different levels of analysis
 |m2|
 
 .. _m3:
-===============================================================================
 
 Module 3: Disasters
 *******************************************************************************
@@ -59,7 +56,6 @@ The Disasters module explores different types of natural and anthropogenic disas
 |m3|
 
 .. _m4:
-===============================================================================
 
 Module 4: Climate and Agriculture
 *******************************************************************************
@@ -69,7 +65,6 @@ The Climate and Agriculture module explores how climate change and the changing 
 |m4|
 
 .. _m5:
-===============================================================================
 
 Module 5: Community Generated
 *******************************************************************************
@@ -77,3 +72,4 @@ Module 5: Community Generated
 The Community Generated module is a collection of short-form learning modules submitted by the TOPS SCHOOL community. Their topics range with all thematic areas covered in the SCHOOL project and demonstrate parts of the data science life cycle. 
 
 |m5|
+
