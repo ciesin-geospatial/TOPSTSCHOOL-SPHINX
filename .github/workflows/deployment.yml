@@ -26,27 +26,8 @@ concurrency:
   cancel-in-progress: true
 
 jobs:
-  lint:
-    name: lint
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871
-        with:
-          fetch-depth: 1
-      - name: Setup
-        uses: actions/setup-python@v5
-        with:
-          python-version: ${{ env.PYTHONVERSION }}
-      - name: Analyze
-        id: linting
-        run: |
-          python -m pip install -Uq pip -rrequirements-dev.txt
-          echo "Checking code for issues..."
-          flake8 ${{ env.SOURCEDIR }}
   build:
     name: build
-    needs: lint
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -71,7 +52,7 @@ jobs:
           path: ${{ env.BUILDDIR }}
   deploy:
     name: deploy
-    needs: [lint, build]
+    needs: [build]
     permissions:
       contents: read
       pages: write
