@@ -8,8 +8,6 @@
 
 .. _home-page:
 
-
-
 .. image:: ./_assets/brands/school-logo-big.png
     :align: center
     :alt: SCHOOL Logo
@@ -48,10 +46,8 @@ water, health and air quality, natural disasters, climate, agriculture, and wild
 and infrastructure across the modules. Within each module, lessons demonstrate how to access, store, process, analyze, and communicate 
 open data following the data science life cycle, and focusing on FAIR principles for scientific data management.
 
-
-
 .. toctree::
-    :caption: **Modules**
+    :caption: Modules
     :hidden:
     :titlesonly:
 
@@ -59,9 +55,10 @@ open data following the data science life cycle, and focusing on FAIR principles
     _documentation/_modules/_air-quality/index
     _documentation/_modules/_disaster/index
     _documentation/_modules/_climate/index
+    _documentation/_modules/_community/index
 
 .. toctree::
-    :caption: **Tutorials & Guides**
+    :caption: Tutorials & Guides
     :hidden:
     :titlesonly:
 
@@ -69,30 +66,10 @@ open data following the data science life cycle, and focusing on FAIR principles
     _documentation/_tutorials/_002-contributing/contributing-to-school
 
 .. toctree::
-    :caption: **Resources**
+    :caption: Resources
     :hidden:
     :titlesonly:
 
     _resources/glossary
     _resources/feedback
     _navbar/getting-involved  
-
-
-.. raw:: html
-
-    <script src="https://giscus.app/client.js"
-        data-repo="ciesin-geospatial/TOPSTSCHOOL-SPHINX"
-        data-repo-id="R_kgDONF9JfA"
-        data-category="Thoughts and Feedbacks"
-        data-category-id="DIC_kwDONF9JfM4Cj3LW"
-        data-mapping="pathname"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="light"
-        data-lang="en"
-        data-loading="lazy"
-        crossorigin="anonymous"
-        async>
-    </script>
