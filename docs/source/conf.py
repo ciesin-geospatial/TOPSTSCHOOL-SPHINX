@@ -89,6 +89,7 @@ html_coeus_theme_options: dict[str, t.Any] = {
         "About": "_navbar/about-us",
         "Get Involved": "_navbar/getting-involved",
         "School Yearbook": "_navbar/meet-the-team",
+        "Modules" : "_navbar/modules"
     },
 }
 
