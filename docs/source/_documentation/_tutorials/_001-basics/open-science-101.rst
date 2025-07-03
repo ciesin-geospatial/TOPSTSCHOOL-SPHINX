@@ -243,5 +243,4 @@ Integrated Development Environments (IDEs).
        
 .. toctree::
     :hidden:
-
     tools
