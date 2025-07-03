@@ -43,52 +43,76 @@ further adapting the code to perform their analyses including data cleaning,
 processing to subset to an area of interest, and creating visualizations to
 share what they have learned with their communities.
 
-**This module is tailored to instruct undergraduate students and early-career
-researchers with some coding language exposure about the data science life
-cycle, illustrating how Open Science principles can be effectively applied to
-earth sciences, particularly in the context of water.**
+.. tip::
 
-The SCHOOL Modules do not intend to teach all-encompassing earth science
-lessons nor provide learners with total coding expertise. Instead, the SCHOOL
-Project aims to provide users with the skills to adapt the SCHOOL lessons to
-the users' own Open Science workflow. To learn more about Open Science,
-explore `NASA TOPS Open Science 101 Curriculum
-<https://openscience101.org/>`_. To explore other themes in the SCHOOL
-project, visit our Modules Page.
+    **This module is designed to provide undergraduate students and early-career researchers with an introduction to the data science “life cycle” and sample code describing how Open Science principles can be effectively applied to earth sciences, particularly in the context of air pollution and its impact on health.**
 
+    Teaching earth science topics and coding skills in depth is beyond the
+    scope of the SCHOOL Modules. Instead, the SCHOOL Project aims to provide
+    users with the skills to adapt the skills learned in SCHOOL lessons to the
+    users' own Open Science workflow. To learn more about Open Science,
+    `NASA's TOPS Open Science 101 Curriculum <https://openscience101.org/
+    explore>`_. To explore other themes in the SCHOOL project, visit our
+    `Modules Page <https://ciesin-geospatial.github.io/TOPSTSCHOOL/modules.
+    html>`_.'
+
+
+-------------------------------------------------------------------------------
 Module 1: Water datasets and use cases cover:
+-------------------------------------------------------------------------------
 
-*   **Module 1 Water Prerequisites and Glossary:** General information on the
+*   **Water Module Prerequisites and Glossary:** General information on the
     prerequisites needed to maximize the usefulness of this lesson, as well as
     a glossary of terms than can be found throughout the module.
 
-    *   `Lesson 0: Prerequisites and Glossary <https://ciesin-geospatial.github.io/TOPSTSCHOOL-water/m0-prereq-glossary.html>`_
+    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-water/m0-prereq-glossary.html
+            :color: primary
+            :shadow:
+
+            Lesson 0: Prerequisites and Glossary
+
 
 *   **Water Security Indicator Model - Global Land Data Assimilation system
     (WSIM-GLDAS):** Exploring water anomalies using a historical dataset.
 
-    *   `Lesson 1: Acquiring, Pre-Processing, and Advanced Visualizations with
-        WSIM-GLDAS [R Version] <https://ciesin-geospatial.github.io/
-        TOPSTSCHOOL-water/m101-wsim-gldas.html>`_
+    .. grid:: 2
+        :gutter: 2
 
-    *   `Lesson 1: Acquiring, Pre-Processing, and Advanced Visualizations with
-        WSIM-GLDAS [Python Version] <https://ciesin-geospatial.github.io/
-        TOPSTSCHOOL-water/m101-wsim-gldas-python.html>`_
+        .. grid-item::
+
+            *    .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-water/m101-wsim-gldas.html
+                    :color: primary
+                    :shadow:
+
+                    Lesson 1: Water Security Indicator Model |br| [R Version] 
+
+        .. grid-item::
+
+            *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-water/m101-wsim-gldas-python.html
+                    :color: primary
+                    :shadow:
+
+                    Lesson 1: Water Security Indicator Model |br| [Python Version]
 
 *   **Moderate Resolution Imaging Spectroradiometer (MODIS) Near Real-Time
     (NRT) flood data:** Lessons in data acquisition and analysis of recent
     water anomalies.
 
-    *   `Lesson 2: Acquiring and Exploring MODIS NRT Flood Data [R Version]
-        <https://ciesin-geospatial.github.io/TOPSTSCHOOL-water/
-        m102-lance-modis-nrt-global-flood.html>`_
+    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-water/m102-lance-modis-nrt-global-flood.html
+            :color: primary
+            :shadow:
+
+            Lesson 2: Acquiring and Exploring |br| MODIS NRT Flood Data [R Version]
 
 *   **Lead in New York State Schools:** Exploring lead contamination data and
     US Census data and lessons in data cleaning and visualization, with a
     discerning eye towards data limitations.
 
-    *   `Lesson 3: NYC School Water Quality: Exposure to Lead Data <https://
-        topstschool.shinyapps.io/nyc-lead/>`_
+    *   .. button-link:: https://topstschool.shinyapps.io/nyc-lead/
+            :color: primary
+            :shadow:
+
+            Lesson 3: NYC School Water Quality: |br| Exposure to Lead Data 
 
 This course was made possible thanks to the work of our NASA Transform to Open
 Science (TOPS) team, our SCHOOL Open Science team, open science Subject Matter
@@ -96,3 +120,8 @@ Experts (SMEs), and the SCHOOL Development team!
 
 Don't have a `GitHub`_ account? Contact us `here <mailto:TOPSTSCHOOL@gmail.
 com>`_!
+
+
+.. |br| raw:: html
+
+   <br />

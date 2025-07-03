@@ -2,10 +2,10 @@
 .. Created on: Saturday, November 23, 2024
 .. Last updated on: Saturday, November 23, 2024
 
-:og:title: About Us
+:og:title: Modules
 :og:description: ...
 
-.. _about:
+.. _modules:
 
 ===============================================================================
 SCHOOL Modules

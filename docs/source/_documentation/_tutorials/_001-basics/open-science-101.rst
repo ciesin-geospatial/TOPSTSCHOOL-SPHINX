@@ -32,20 +32,14 @@ Open Science 101
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
 
 :term:`Open Science` is a global movement that aims to make scientific
-research more accessible, transparent, and collaborative. At :term:`NASA`,
-we're embracing this transformation through our :term:`TOPS` [#]_ initiative,
-which seeks to democratize scientific knowledge and empower individuals from
-all walks of life to engage with and contribute to the research process.
-:term:`Open Science` is not just a set of practices; it's a movement that
-seeks to revolutionize the way research is conducted and shared across the
-globe. At its heart, open science aims to make scientific research more
-transparent, accessible, and collaborative. By embracing open science,
-researchers can accelerate discoveries, increase public engagement, and ensure
-that science serves humanity more effectively.
+research more accessible, transparent, and collaborative seeking 
+to revolutionize the way research is conducted and shared across the
+globe. By embracing open science, researchers can accelerate discoveries, 
+increase public engagement, and ensure that science serves humanity more effectively.
 
 The :term:`SCHOOL`, **Science Core Heuristics for Open Science Outcomes in
-Learning** program is an essential part of NASA's TOPS initiative. It provides
-a structured, immersive curriculum designed to introduce students,
+Learning** program is an essential part of NASA's :term:`TOPS` [#]_ initiative. It provides 
+immersive curriculum designed to introduce students,
 researchers, and science enthusiasts to the core principles of Open Science.
 Whether you're just starting out or already well-versed in scientific
 research, our mission is to help you harness the power of Open Science to
@@ -99,18 +93,7 @@ open science unknowningly if you are:
 - Sharing research protocols openly or documenting code used for data analysis.
 - Publishing in open-access journals or sharing :term:`preprint` of research
   articles.
-- Sharing raw datasets and detailed analysis scripts.
-
--------------------------------------------------------------------------------
-Why Open Science Matters?
--------------------------------------------------------------------------------
-
-The importance of Open Science goes far beyond academia. In today's
-interconnected world, scientific challenges are increasingly global and
-complex. Problems like climate change, environmental justice, and natural
-disasters demand cross-disciplinary solutions that involve many collaborators.
-:term:`Open Science` breaks down silos, enabling diverse teams of researchers,
-policymakers, and citizens to work together in solving real-world problems.
+- Sharing raw datasets and detailed analysis scripts. 
 
 .. dropdown:: Reasons why open science is vital
 
@@ -212,24 +195,6 @@ policymakers, and citizens to work together in solving real-world problems.
               distributed more equitably, fostering a more inclusive and
               diverse scientific environment.
 
-:term:`Open Science` isn't just about making research available |html-dash|
-it's about making a difference. By participating in Open Science, you are
-contributing to a global movement that seeks to democratize knowledge, break
-down silos, and create a more equitable world. When scientists, researchers,
-and learners like you come together to share knowledge openly, we amplify our
-ability to solve complex problems and create a future where science benefits
-everyone.
-
-Imagine the ripple effect your contributions could have: a dataset you share
-could lead to a breakthrough in environmental protection, the method you
-develop could improve public health outcomes, or your insights into climate
-change could help shape policies that protect vulnerable communities. Open
-Science allows you to play a part in something far bigger than yourself.
-
-The below video summarizes the importance of Open Science. [#]_
-
-.. youtube-video:: https://www.youtube.com/watch?v=c-bemNZ-IqA
-
 -------------------------------------------------------------------------------
 Summary and Up Next
 -------------------------------------------------------------------------------
@@ -242,26 +207,27 @@ to create a better, more informed world.
 Once you've grasped the importance of open science, you'll be ready to dive
 into the next section, we'll introduce you to the software and platforms that
 can help you implement open science practices efficiently. We'll cover
-everything from setting up necessary accounts to configuring IDEs.
+everything from setting up necessary accounts to configuring software such as
+Integrated Development Environments (IDEs).
 
 .. grid:: 3 3 3 3
 
     .. grid-item::
 
-        .. card:: Setting up GitHub, ORCID accounts and more
+        .. card:: Open Science tools and more
             :img-alt: Accounts setup guide
             :img-background: ../../../_assets/guides/must-have-accounts.png
             :link-type: doc
-            :link: accounts-setup
+            :link: tools
             :shadow: none
 
     .. grid-item::
 
-        .. card:: Tools to empower your Open Science workflows
-            :img-alt: Tools setup guide
+        .. card:: How to get more involved in Open Science
+            :img-alt: Getting Involved
             :img-background: ../../../_assets/guides/tools-technologies.png
             :link-type: doc
-            :link: required-tools
+            :link: ../_002-contributing/getting-involved
             :shadow: none
 
 .. rubric:: References
@@ -273,11 +239,9 @@ everything from setting up necessary accounts to configuring IDEs.
        stack for building diagramming applications.
 .. [#] A wonderful blog by NASA on `Why Do Open Science?
        <https://science.nasa.gov/open-science/why-do-open-science/>`_
-.. [#] Dr. Rachael Ainsworth's TEDx talk on `Research Culture is Broken; Open
-       Science can Fix It <https://www.youtube.com/watch?v=c-bemNZ-IqA>`_.
 
+       
 .. toctree::
     :hidden:
 
-    accounts-setup
-    required-tools
+    tools

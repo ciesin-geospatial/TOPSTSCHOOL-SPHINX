@@ -8,13 +8,14 @@
 .. _about:
 
 ===============================================================================
-About Us
+About
 ===============================================================================
 
 .. title-hero::
     :icon: fa-solid fa-circle-info
     :summary:
-        ...
+        Science Core Heuristics for Open Science Outcomes in Learning (SCHOOL), part of the NASA <a href="https://zenodo.org/records/8087116" target="_blank">Transform to Open Science (TOPS) Training (TOPST)</a> initiative.
+
 
 .. tags:: topstschool
 
@@ -27,9 +28,8 @@ About Us
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
 
+ 
 
-**Science Core Heuristics for Open Science Outcomes in Learning (SCHOOL)**,
-part of the NASA `Transform to Open Science (TOPS) <https://zenodo.org/records/8087116>`_ Training (TOPST) initiative.
 
 
 -------------------------------------------------------------------------------

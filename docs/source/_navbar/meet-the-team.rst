@@ -72,6 +72,7 @@ power of knowledge sharing and inclusivity.
 
 .. headshots::
 
+
     - Navin Aade
     - Open Science Team
     - ../_assets/team/open-science/navin_aade.png
@@ -84,25 +85,57 @@ power of knowledge sharing and inclusivity.
     - Open Science Team
     - ../_assets/team/open-science/jinyi_cai.png
 
+
+    - Eldar Imanbekov
+    - Open Science Team
+    - ../_assets/team/open-science/eldar-I.jpg
+
     - Hazem Mahmoud
     - Open Science Team
     - ../_assets/team/open-science/hazem_mahmoud.png
+    
+    - Akshay Mestry
+    - Open Science Team
+    - ../_assets/team/open-science/akshay_mestry.png
 
     - Josie Morkin
     - Open Science Team
     - ../_assets/team/open-science/josie_morkin.png
 
+
     - Arina Moroz
     - Open Science Team
     - ../_assets/team/open-science/arina_moroz.png
+
+    
+    - America Munoz
+    - Open Science Team
+    - ../_assets/team/open-science/america_munoz.png
+
+    - Dhruvil Prajapati
+    - Open Science Team
+    - ../_assets/team/empty.png
 
     - Alber Sánchez
     - Open Science Team
     - ../_assets/team/open-science/alber_sanchez.png
 
+    - Alexandr Smagin
+    - Open Science Team
+    - ../_assets/team/open-science/alex_smagin.png
+
+    - Raphael Sutiono
+    - Open Science Team
+    - ../_assets/team/open-science/alex_smagin.png
+
+
     - Hieu Tran
     - Open Science Team
     - ../_assets/team/open-science/hieu_tran.png
+
+    - Poornima Vaidya
+    - Open Science Team
+    - ../_assets/team/open-science/poornima-v.png
 
     - Aneese Williams
     - Open Science Team
@@ -112,21 +145,7 @@ power of knowledge sharing and inclusivity.
     - Open Science Team
     - ../_assets/team/empty.png
 
-    - Akshay Mestry
-    - Open Science Team
-    - ../_assets/team/open-science/akshay_mestry.png
 
-    - Alexandr Smagin
-    - Open Science Team
-    - ../_assets/team/open-science/alex_smagin.png
-
-    - America Munoz
-    - Open Science Team
-    - ../_assets/team/open-science/america_munoz.png
-
-    - Dhruvil Prajapati
-    - Open Science Team
-    - ../_assets/team/empty.png
 
 .. _consultation-team-sme:
 
@@ -155,53 +174,90 @@ educators, and researchers with tools and knowledge to drive meaningful change.
 
 .. headshots::
 
+    - Shristi Adhikari
+    - Master’s Student in Environmental Studies at the `Kentucky State University`_
+    - ../_assets/team/consultants/shristi-a.jpg
+
+    - Yoonjung Ahn
+    - Assistant professor in the `Department of Geography & Atmospheric Science`_ at t
+        he University of Kansas
+    - ../_assets/team/consultants/yoonjun-a.png
+
     - Deborah Balk
     - Director at the `CUNY Institute for Demographic Research`_ and Prof
         essor at `Baruch College`_
     - ../_assets/team/consultants/balk.png
 
+    - Anne-Lise Boyer
+    - Postdoctoral Research Associate at The Univeristy of Arizona `College o
+        f Architecture, Planning & Landscape Architecture <https://capla.arizona.edu/>`_
+    - ../_assets/team/consultants/anne-lise-boyer.jpg
+
     - Robert Chen
-    - Director Emeritus, `CIESIN`_, Columbia Climate School, Columbi
-        a University and Manager Emeritus, NASA (`SEDAC`_)
+    - Director Emeritus, `CIESIN`_, Columbia Climate School, Columbia University 
+        nd Manager Emeritus, NASA (`SEDAC`_)
     - ../_assets/team/consultants/chen.png
 
     - Nancy Degan
     - Senior Advisor for Education at `Columbia Water Center`_
     - ../_assets/team/consultants/degnan.png
-
-    - Laureline Josset
-    - Associate Research Scientist at `Columbia Water Center`_
-    - ../_assets/team/consultants/josset.png
-
-    - Dr. Antonio Tovar
-    - Assistant Professor of Computer Science and Information Syst
-        ems at `National Louis University`_
-    - ../_assets/team/consultants/tovar.png
-
-    - Qian Huang
-    - Research Assistant Professor at East Tennessee State University, `Ce
-        nter for Rural Health Research`_
-    - ../_assets/team/consultants/huang.png
-
+    
+    - Elizabeth Dzwonczyk
+    - Senior Advisor for Education at `Columbia Water Center`_
+    - ../_assets/team/consultants/elizabeth-d.jpg
+    
     - Maggi Glasscoe
     - Research Associate at the `University of Alabama-Huntsville`_ a
         nd Disasters Coordinator for NASA's `Applied Sciences Disaster
         s Program`_
     - ../_assets/team/consultants/glasscoe.png
 
-    - Ryan Meade
-    - Coordinator of Academic Support Services for the Educational Opport
-        unity Program at `SUNY Binghamton`_
-    - ../_assets/team/consultants/meade.png
+    - Qian Huang
+    - Research Assistant Professor at East Tennessee State University, `Ce
+        nter for Rural Health Research`_
+    - ../_assets/team/consultants/huang.png
 
     - Dave Jones
     - Founder and CEO at `StormCenter Communications, Inc. <https://
         geocollaborate.com/>`_
     - ../_assets/team/consultants/jones.png
 
+    - Laureline Josset
+    - Associate Research Scientist at `Columbia Water Center`_
+    - ../_assets/team/consultants/josset.png
+    
+    - Ryan Meade
+    - Coordinator of Academic Support Services for the Educational Opport
+        unity Program at `SUNY Binghamton`_
+    - ../_assets/team/consultants/meade.png
+
+    - Alamin Molla
+    - Ph.D. GIScience Student, School of Geographical Sciences and Urban Pla
+        nning; Arizona State University Graduate Researcher, `Urban Climate Research Center`_
+    - ../_assets/team/consultants/alamin-m.png
+
+    - Faezeh Najafzadeh
+    - PhD Candidate in Geography and Environmental Sustainability at the `Univeristy of Oklahoma`_
+    - ../_assets/team/consultants/faezeh-n.png
+
+    - Jacob Orser
+    - Program Support Specialist at `NASA Acres`_
+    - ../_assets/team/consultants/jacob-o.jpg
+
     - Thomas Parris
     - President at `iSciences`_
     - ../_assets/team/consultants/parris.png
+    
+    - Dr. Antonio Tovar
+    - Assistant Professor of Computer Science and Information Syst
+        ems at `National Louis University`_
+    - ../_assets/team/consultants/tovar.png
+
+    - Masha Vernik
+    - Master’s Student at the `Univeristy of Washington School of Environ
+        mental and Forest Sciences`_
+    - ../_assets/team/consultants/masha-v.jpg
+
 
 .. _development-team:
 
@@ -374,3 +430,9 @@ Alumni
 .. _sedac: https://sedac.ciesin.columbia.edu/
 .. _suny binghamton: https://www.binghamton.edu/programs/eop/about/staff.html
 .. _university of alabama-huntsville: https://www.uah.edu/
+.. _Kentucky State University: https://www.kysu.edu/
+.. _Department of Geography & Atmospheric Science: https://geog.ku.edu/
+.. _Urban Climate Research Center: https://ucrc.asu.edu/
+.. _Univeristy of Oklahoma: https://www.ou.edu/ags/geography
+.. _NASA Acres: https://www.nasaacres.org/
+.. _Univeristy of Washington School of Environmental and Forest Sciences: https://sefs.uw.edu/

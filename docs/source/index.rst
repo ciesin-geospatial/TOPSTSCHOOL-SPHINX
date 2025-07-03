@@ -40,13 +40,36 @@ make science open, inclusive, and accessible to all. Our mission is to inspire s
 Earth Science Applications and embrace the power of Open Science in solving
 some of the world's most pressing challenges. 
 
-Hello Test
+
 
 The SCHOOL project was started with funding from a NASA ROSES Grant under the Transform to Open Science - Training mission. 
 The SCHOOL curriculum consists of open, interactive, and interdisciplinary learning modules covering thematic areas including 
 water, health and air quality, natural disasters, climate, agriculture, and wildfires, while integrating themes of population 
 and infrastructure across the modules. Within each module, lessons demonstrate how to access, store, process, analyze, and communicate 
 open data following the data science life cycle, and focusing on FAIR principles for scientific data management.
+
+
+.. grid:: 2 2 2 2
+   :gutter: 2
+
+   .. grid-item::
+
+      .. button-link:: _navbar/about.html
+         :color: primary
+         :shadow:
+
+         About SCHOOL
+
+   .. grid-item::
+
+      .. button-link:: _documentation/_modules/_water/index.html
+         :color: primary
+         :shadow:
+
+         Module 1: Water
+
+
+
 
 .. toctree::
     :caption: Modules
@@ -60,18 +83,13 @@ open data following the data science life cycle, and focusing on FAIR principles
     _documentation/_modules/_community/index
 
 .. toctree::
-    :caption: Tutorials & Guides
-    :hidden:
-    :titlesonly:
-
-    _documentation/_tutorials/_001-basics/open-science-101
-    _documentation/_tutorials/_002-contributing/contributing-to-school
-
-.. toctree::
     :caption: Resources
     :hidden:
     :titlesonly:
 
+    _navbar/about
+    _navbar/meet-the-team
     _resources/glossary
-    _resources/feedback
-    _navbar/getting-involved  
+    _resources/feedback  
+    _documentation/_tutorials/_001-basics/open-science-101
+    _documentation/_tutorials/_002-contributing/getting-involved 
