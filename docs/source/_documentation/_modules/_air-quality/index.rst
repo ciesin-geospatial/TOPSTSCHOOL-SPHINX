@@ -76,10 +76,12 @@ Module 2: Air Quality datasets and use cases cover:
     hazardous chronic air quality and socioeconomic characteristics of
     different New York City school environments.
 
-    *   `Lesson 1: Acquiring, Pre-Processing, and Visualizing
-        Student-Monitored Data for New York City schools <https://
-        ciesin-geospatial.github.io/TOPSTSCHOOL-air-quality/
-        m201-student-led-monitoring-nyc.html>`_
+    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-air-quality/m201-student-led-monitoring-nyc.html
+            :color: primary
+            :shadow:
+
+            Lesson 1: Acquiring, Pre-Processing, and Visualizing
+            |br| Student-Monitored Data for New York City schools
 
 *   **Exploring Air Quality, Social Vulnerability, and Health Outcomes in Metro
     Detroit:** Participants will investigate how the Social Vulnerability
@@ -88,18 +90,24 @@ Module 2: Air Quality datasets and use cases cover:
     between socioeconomic status, health disparities, and environmental
     injustice.
 
-    *   `Lesson 2: Exploring Air Quality, Social Vulnerability, and Health
-        Outcomes in Metro Detroit <https://ciesin-geospatial.github.io/
-        TOPSTSCHOOL-air-quality/m202-svi-tri-icis-places.html>`_
+    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-air-quality/m202-svi-tri-icis-places.html
+            :color: primary
+            :shadow:
+
+            Lesson 2: Exploring Air Quality, Social Vulnerability, 
+            |br|  and Health Outcomes in Metro Detroit
 
 *   **Environmental Justice Screening and Mapping Tool (EJScreen):** Explore
     the environmental and demographic characteristics of a geographic area
     using the Environmental Protection Agency’s environmental justice
     screening and mapping tool.
 
-    *   `Lesson 3: Exploring EJScreen: Environmental Justice Screening and
-        Mapping Tool <https://ciesin-geospatial.github.io/
-        TOPSTSCHOOL-air-quality/m203-ejscreen.html>`_
+    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-air-quality/m203-ejscreen.html
+            :color: primary
+            :shadow:
+
+            Lesson 3: Exploring EJScreen: Environmental 
+            |br| Justice Screening and Mapping Tool
 
 *   **Particulate Matter Across Socioeconomic Strata of Countries:** Analyzing
     the Global Gridded Relative Deprivation Index Version 1 (GRDIv1) and annual
@@ -109,9 +117,12 @@ Module 2: Air Quality datasets and use cases cover:
     and its implications for public health, focusing on both local and global
     contexts.
 
-    *   `Lesson 4: Particulate Matter Across Socioeconomic Strata of Countries
-        <https://ciesin-geospatial.github.io/TOPSTSCHOOL-air-quality/
-        m204-grdiv1-pm25.html>`_
+    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-air-quality/m204-grdiv1-pm25.html
+            :color: primary
+            :shadow:
+
+             Lesson 4: Particulate Matter Across 
+             |br| Socioeconomic Strata of Countries 
 
 This course was made possible thanks to the work of our NASA Transform to Open
 Science (TOPS) team, our SCHOOL Open Science team, open science Subject Matter
@@ -119,3 +130,8 @@ Experts (SMEs), and the SCHOOL Development team!
 
 Don't have a `GitHub`_ account? Contact us `here <mailto:TOPSTSCHOOL@gmail.
 com>`_!
+
+
+.. |br| raw:: html
+
+   <br />

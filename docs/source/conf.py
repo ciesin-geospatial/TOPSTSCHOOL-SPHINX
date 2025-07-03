@@ -86,9 +86,8 @@ html_coeus_theme_options: dict[str, t.Any] = {
     "show_previous_next_pages": True,
     "supported_languages": {"en": "English"},
     "navbar_links": {
-        "About": "_navbar/about-us",
-        "Get Involved": "_navbar/getting-involved",
-        "School Yearbook": "_navbar/meet-the-team",
+        "About": "_navbar/about",
+        "Team": "_navbar/meet-the-team",
         "Modules" : "_navbar/modules",
         
     },
