@@ -70,16 +70,18 @@ Module 4: Climate and Agriculture datasets and use cases cover:
             :color: primary
             :shadow:
 
-            Lesson 1: Understanding Human Exposure to Heat
+            Lesson 1: Understanding Human 
+            |br| Exposure to Heat
 
 
-*   **Long Term Climatologies Featuring nClimGrid-Daily Data** This lesson will explore long-term climate patterns and detect climate change signals through innovative visualization techniques and time series analysis using operational climate monitoring data. You will learn to access and analyze NOAA's nClimGrid-Daily dataset, create climate circles that reveal annual seasonal patterns, apply time series decomposition to separate climate signals across multiple timescales, and connect these analytical methods to real-world climate monitoring applications. This integrated approach demonstrates how operational climate datasets enable both scientific research and practical applications for understanding climate variability and change in rapidly evolving urban environments.
-    
+*   **Long Term Climatologies Featuring nClimGrid-Daily Data** This lesson will explore long-term climate patterns and detect climate change signals using NOAA's nClimGrid-Daily dataset.
+
     *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-climate-agriculture/m402-nclimgrid.html
             :color: primary
             :shadow:
 
-            Lesson 4: NASA ACRES Climate Resilience Network
+            Lesson 2: Long Term Climatologies 
+            |br| Featuring nClimGrid-Daily Data
 
 
 *   **Flash Drought Multi-Indicator Analysis:** This lesson will use R and open source R packages to work with multiple drought indicators to understand rapid drought intensification and its agricultural impacts.
@@ -88,7 +90,8 @@ Module 4: Climate and Agriculture datasets and use cases cover:
             :color: primary
             :shadow:
 
-            Lesson 3: Flash Drought Multi-Indicator Analysis
+            Lesson 3: Flash Drought 
+            |br| Multi-Indicator Analysis
 
 
 
