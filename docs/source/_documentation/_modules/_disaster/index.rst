@@ -1,4 +1,4 @@
-.. Author: Steven Sanchez <stevennlu> 
+.. Author: TOPS SCHOOL Development Team
 .. Created on: Friday, May 16, 2025
 .. Last updated on: Friday, May 16, 2025
 
@@ -89,6 +89,19 @@ Module 3: Disaster datasets and use cases cover:
 
             Lesson 2: Analyzing Wildfire Impact Using 
             |br| NASA FIRMS and NOAA GOES-18 Data
+
+
+* **Rainfall and Flood analysis in Maui, Hawaii**
+  This lesson compares rain data from satellites and rain gauges to observe a rain event that resulted in damage. The damage assessment is completed with drone observations.
+
+    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-disasters/m303-maui-flood-analysis.html
+            :color: primary
+            :shadow:
+
+            Lesson 3: Maui Rainfall Analysis 
+
+
+
 
 
 - **More Lessons coming soon…**
