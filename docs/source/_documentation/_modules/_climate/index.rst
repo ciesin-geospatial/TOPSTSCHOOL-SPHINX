@@ -74,7 +74,6 @@ Module 4: Climate and Agriculture datasets and use cases cover:
 
 
 *   **Long Term Climatologies Featuring nClimGrid-Daily Data** This lesson will explore long-term climate patterns and detect climate change signals through innovative visualization techniques and time series analysis using operational climate monitoring data. You will learn to access and analyze NOAA's nClimGrid-Daily dataset, create climate circles that reveal annual seasonal patterns, apply time series decomposition to separate climate signals across multiple timescales, and connect these analytical methods to real-world climate monitoring applications. This integrated approach demonstrates how operational climate datasets enable both scientific research and practical applications for understanding climate variability and change in rapidly evolving urban environments.
-research data for derived conclusions and to view the impacts climate change has on agriculture.
     
     *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-climate-agriculture/m402-nclimgrid.html
             :color: primary
