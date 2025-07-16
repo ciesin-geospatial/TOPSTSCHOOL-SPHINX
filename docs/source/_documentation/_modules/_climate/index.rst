@@ -91,7 +91,7 @@ Module 4: Climate and Agriculture datasets and use cases cover:
             :shadow:
 
             Lesson 3: Flash Drought 
-            |br| Multi-Indicator Analysis
+            |br| Multi-Indicator Analysis      
 
 
 
