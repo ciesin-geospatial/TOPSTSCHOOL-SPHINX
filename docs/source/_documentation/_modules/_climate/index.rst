@@ -72,6 +72,17 @@ Module 4: Climate and Agriculture datasets and use cases cover:
 
             Lesson 1: Understanding Human Exposure to Heat
 
+
+*   **Long Term Climatologies Featuring nClimGrid-Daily Data** This lesson will explore long-term climate patterns and detect climate change signals through innovative visualization techniques and time series analysis using operational climate monitoring data. You will learn to access and analyze NOAA's nClimGrid-Daily dataset, create climate circles that reveal annual seasonal patterns, apply time series decomposition to separate climate signals across multiple timescales, and connect these analytical methods to real-world climate monitoring applications. This integrated approach demonstrates how operational climate datasets enable both scientific research and practical applications for understanding climate variability and change in rapidly evolving urban environments.
+research data for derived conclusions and to view the impacts climate change has on agriculture.
+    
+    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-climate-agriculture/m402-nclimgrid.html
+            :color: primary
+            :shadow:
+
+            Lesson 4: NASA ACRES Climate Resilience Network
+
+
 *   **Flash Drought Multi-Indicator Analysis:** This lesson will use R and open source R packages to work with multiple drought indicators to understand rapid drought intensification and its agricultural impacts.
     
     *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-climate-agriculture/m403-flash-drought-ag.html
@@ -80,14 +91,6 @@ Module 4: Climate and Agriculture datasets and use cases cover:
 
             Lesson 3: Flash Drought Multi-Indicator Analysis
 
-
-*   **NASA ACRES Climate Resilience Network:** This lesson will use public research data for derived conclusions and to view the impacts climate change has on agriculture.
-    
-    *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-climate-agriculture/m404-nasa-acres-climate-resilience-network.html
-            :color: primary
-            :shadow:
-
-            Lesson 4: NASA ACRES Climate Resilience Network
 
 
 This course was made possible thanks to the work of our NASA Transform to Open Science (TOPS) team, our SCHOOL Open Science team, open science Subject Matter Experts (SMEs), and the SCHOOL Development team!
