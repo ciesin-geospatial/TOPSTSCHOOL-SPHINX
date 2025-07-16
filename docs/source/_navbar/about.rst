@@ -61,7 +61,7 @@ Continue engaging with the SCHOOL project in these online communities:
             :color: primary
             :shadow:
 
-            SCHOOL Zenodo Community    
+            SCHOOL Zenodo Community     
 
 *   **SCHOOL YouTube Channel** 
     
