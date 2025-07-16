@@ -49,7 +49,7 @@ Community-Contributed Lessons:
         Lesson 502: NASA ACRES Climate Resilience Network 
 
 *   .. button-link:: https://ciesin-geospatial.github.io/TOPSTSCHOOL-community/m503-weird-weather.html
-        :color: primary
+        :color: primary 
         :shadow:
 
         Lesson 503: Agriculture with Weird Weather in Washington State 
@@ -76,7 +76,7 @@ Community-Contributed Lessons:
         :color: primary
         :shadow:
 
-        Lesson 507: Opening Snow Storm Data (Python)
+        Lesson 507: Opening Snow Storm Data (Python) 
    
 
 We thank the SCHOOL community and contributors for helping expand the reach and relevance of this module. Your insights shape how disasters are studied and understood through open science.
