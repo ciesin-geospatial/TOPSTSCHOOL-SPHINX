@@ -28,11 +28,7 @@ About
     - :github: https://github.com/ciesin-geospatial
     - :youtube: https://www.youtube.com/@TOPSTSCHOOL
 
- 
-
-
-
-===============================================================================
+  
 Project Overview
 ===============================================================================
 
@@ -44,28 +40,79 @@ consists of learning modules designed to fit both online
 science life cycle with varying themes: **Water, Health and Air Quality,
 Environmental Justice, Disasters, Wildfires, Agriculture, and Climate.**
 
- 
-TOPSTSCHOOL Module Structure
+Additional Channels 
+-------------------------------------------------------------------------------
+
+Continue engaging with the SCHOOL project in these online communities:
+
+
+*   **SCHOOL GitHub Repo** 
+    
+    *   .. button-link:: https://github.com/ciesin-geospatial/TOPSTSCHOOL
+            :color: primary
+            :shadow:
+
+            GitHub Repo 
+
+
+*   **SCHOOL Zenodo Community** 
+    
+    *   .. button-link:: https://zenodo.org/communities/topstschool/
+            :color: primary
+            :shadow:
+
+            SCHOOL Zenodo Community    
+
+*   **SCHOOL YouTube Channel** 
+    
+    *   .. button-link:: https://www.youtube.com/channel/UCOIrczFd7_ht2bNUQ3qnM8w
+            :color: primary
+            :shadow:
+
+            SCHOOL on YouTube    
+
+*   **SCHOOL Zotero Library** 
+    
+    *   .. button-link:: https://www.zotero.org/groups/5638572/topstschool/library
+            :color: primary
+            :shadow:
+
+            SCHOOL Zotero Library   
+
+
+Module Structure
 -------------------------------------------------------------------------------
 
 Each thematic module, broken down into three comprehensive lessons, will
 demonstrate the full data science life cycle and connect those processes with
 open science principles.
 
-.. table:: Module Structure Overview
 
-   =====================  ================================================  ===============================================================
-   Module Component       Data Science Life Cycle/Open Science Integration  Example Activity
-   =====================  ================================================  ===============================================================
-   Lesson 1               Generation and collection                         Identify and obtain data sources. Generation could include spatializing tabular data.
-   Lesson 2               Processing and storage                            Data integration tasks are completed. Local and cloud storage options are demonstrated.
-   Lesson 3               Management and analysis                           Creation of metadata to inform uses and structure. Statistical techniques applied.
-   Lesson 4               Visualization and interpretation                  Creation of charts and maps. Interpretation thought questions and examples from other work.
-   Lesson 5               Open Science and Community Engagement             How to share these results openly. Practice of engaging with existing and emerging community networks.
-   =====================  ================================================  ===============================================================
+.. list-table::  
+   :widths: 10 15 25   
+   :header-rows: 1
+
+   * - Module Component 
+     - Data Science Life Cycle |br| Open Science Integration
+     - Example Activity
+   * - Lesson 1
+     - Generation and collection
+     - Identify and obtain data sources. |br| Generation could include spatializing tabular data.
+   * - Lesson 2
+     - Processing and storage
+     - Data integration tasks are completed. |br| Local and cloud storage options are demonstrated.
+   * - Lesson 3
+     - Management and analysis
+     - Creation of metadata to inform uses and structure. |br| Statistical techniques applied.
+   * - Lesson 4
+     - Visualization and interpretation
+     - Creation of charts and maps. Interpretation thought |br| questions and examples from other work.
+   * - Lesson 5
+     - Open Science and |br| Community Engagement
+     - How to share these results openly. Practice of engaging |br| with existing and emerging community networks.
 
 
-===============================================================================
+ 
 SCHOOL Pedagogical Approach
 ===============================================================================
 
@@ -109,16 +156,15 @@ Evaluations
 *   Clearly defined learning objectives allow instructors to assess metrics of
     student performance, and to provide feedback early and often.
 
-
-===============================================================================
+ 
 Project Timeline
 ===============================================================================
 
 The project will commence on July 1, 2023 and end on June 30, 2025. Learning
 modules will be developed using the SAFe methodology which will allow for the
 regular incremental release of thematic content as it becomes available.
+ 
 
-===============================================================================
 Events
 ===============================================================================
 
@@ -216,3 +262,8 @@ October 4–5, the TOPSTSCHOOL Development Team hosted a workshop at the `I-GUID
 
 - `Workshop Documents - I-GUIDE Forum 2023 <https://doi.org/10.5281/zenodo.8432066>`_
 - `I-GUIDE YouTube Video (subtítulos en Español) <https://youtu.be/OsZ3xBYNB6Q>`_
+
+
+.. |br| raw:: html
+
+   <br />
